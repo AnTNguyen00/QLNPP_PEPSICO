@@ -66,6 +66,19 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Load dữ liệu nhân viên cho quản lý phân quyền
+        public List<NHANVIEN> load_TenNV0()
+        {
+            return QLNPP_PS.NHANVIENs.Select(k => k).ToList<NHANVIEN>();
+        }
+
+        public List<NHOMNHANVIEN> load_NhomNV()
+        {
+            return QLNPP_PS.NHOMNHANVIENs.Select(k => k).ToList<NHOMNHANVIEN>();
+        }
+
+        #endregion
+
         #region Load dữ liệu nhân viên theo bảng lương
         public IQueryable load_MANV()
         {

@@ -589,6 +589,7 @@ namespace QTNPP_PEPSI
             this.txtDiemDat.PreventEnterBeep = true;
             this.txtDiemDat.Size = new System.Drawing.Size(127, 22);
             this.txtDiemDat.TabIndex = 6;
+            this.txtDiemDat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiemDat_KeyPress);
             // 
             // labelX3
             // 

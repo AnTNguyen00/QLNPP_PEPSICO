@@ -245,6 +245,7 @@ namespace QTNPP_PEPSI
             this.txtSDT.PreventEnterBeep = true;
             this.txtSDT.Size = new System.Drawing.Size(195, 22);
             this.txtSDT.TabIndex = 6;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // labelX3
             // 
@@ -390,6 +391,7 @@ namespace QTNPP_PEPSI
             this.txtHoTenKH.PreventEnterBeep = true;
             this.txtHoTenKH.Size = new System.Drawing.Size(195, 22);
             this.txtHoTenKH.TabIndex = 1;
+            this.txtHoTenKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTenKH_KeyPress);
             // 
             // labelX6
             // 

@@ -70,6 +70,7 @@ namespace QTNPP_PEPSI
         private void FormDoiMatKhau_Load(object sender, EventArgs e)
         {
             txtUser.Text = nvlog.TENDANGNHAP.ToString();
+            txtPassword.Focus();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

@@ -38,8 +38,11 @@ namespace QTNPP_PEPSI
             DTPNgayApDung.Text = GVBangLuong.CurrentRow.Cells[3].Value.ToString();
             txtGhiChu.Text = GVBangLuong.CurrentRow.Cells[4].Value.ToString();
 
-            btnThem.Enabled = false;
+            //không cho nhập dữ liệu vào combobox
+            this.cbbMaLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
+            btnThem.Enabled = false;
             loadcbbbl();
         }
 
@@ -104,9 +107,7 @@ namespace QTNPP_PEPSI
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             btnThem.Enabled = true;
-
             clear();
-
             txtGhiChu.Enabled = true;
         }
 
@@ -116,10 +117,10 @@ namespace QTNPP_PEPSI
             cbbMaNhanVien.ResetText();
             txtHoTenNhanVien.Clear();
             txtMuccLuongCoBan.Clear();
-            DTPTuNgay.Text = string.Empty;
-            DTPDenNgay.Text = string.Empty;
+            DTPTuNgay.ResetText();
+            DTPDenNgay.ResetText();
             txtHeSoLuong.Clear();
-            DTPNgayApDung.Text = string.Empty;
+            DTPNgayApDung.ResetText();
             txtLuongThucTe.Clear();
             txtGhiChu.Clear();
         }
@@ -183,6 +184,56 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtHoTenNhanVien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtMuccLuongCoBan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHeSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLuongThucTe_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
