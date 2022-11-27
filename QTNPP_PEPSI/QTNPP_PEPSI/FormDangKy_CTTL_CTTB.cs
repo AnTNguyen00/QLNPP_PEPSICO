@@ -76,6 +76,10 @@ namespace QTNPP_PEPSI
             cbbMaKH.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();   
             DTPNgayDK.Value = Convert.ToDateTime(GV_DK_CTTB.CurrentRow.Cells[2].Value.ToString());
             txtDiemTL.Text = GV_DK_CTTB.CurrentRow.Cells[3].Value.ToString();
+
+            //không cho nhập dữ liệu vào combobox
+            this.cbMaCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMaKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         }
 
         #region Load trạng thái theo dk TBTL

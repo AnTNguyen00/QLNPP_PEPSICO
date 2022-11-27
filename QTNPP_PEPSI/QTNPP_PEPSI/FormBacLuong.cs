@@ -40,6 +40,9 @@ namespace QTNPP_PEPSI
             DTPTuNgay.Text = GVChiTietBacLuong.CurrentRow.Cells[2].Value.ToString();
             DTPDenNgay.Text = GVChiTietBacLuong.CurrentRow.Cells[3].Value.ToString();
 
+            //không cho nhập dữ liệu vào combobox
+            this.cbbNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             btnThem.Enabled = false;
             btnThemCT.Enabled = false;
             txtMaBacLuong.Enabled = false;
@@ -210,6 +213,28 @@ namespace QTNPP_PEPSI
             catch
             {
                 MessageBox.Show("Sửa dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtHeSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtTenBacLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

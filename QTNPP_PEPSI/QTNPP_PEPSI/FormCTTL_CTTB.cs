@@ -36,7 +36,7 @@ namespace QTNPP_PEPSI
             this.Close();
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public string layMaTuDong_TBTL()
         {
             List<CTTB_CTTL> lst = new List<CTTB_CTTL>();
             lst = TBTL.getTBTL();
@@ -51,8 +51,12 @@ namespace QTNPP_PEPSI
                 matbtl = matbtl + "";
             matbtl += ma;
 
-            txtMaCT.Text = matbtl;
+            return matbtl;
+        }
 
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_TBTL();
             txtTenCT.Clear();
             cbbMaSP.Text = "";
             txtDiemDat.Clear();
@@ -87,7 +91,7 @@ namespace QTNPP_PEPSI
             }
 
             //đổi link
-            Bitmap anh = new Bitmap(@"C:\Users\User\OneDrive\Máy tính\QLNPP_PEPSICO\QTNPP_PEPSI\hinhnew\1080-x-540-go-v-central-retail.jpg");
+            Bitmap anh = new Bitmap(@"C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\hinhnew\1080-x-540-go-v-central-retail.jpg");
 
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.Image = (Image)anh;
@@ -97,6 +101,9 @@ namespace QTNPP_PEPSI
             cbbMaSP.DataSource = SP.load_TenSP();
             cbbMaSP.DisplayMember = "TENSANPHAM";
             cbbMaSP.ValueMember = "MASP";
+
+            //không cho nhập dữ liệu vào combobox
+            this.cbbMaSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             txtTenCT.Enabled = true;
         }
@@ -114,7 +121,7 @@ namespace QTNPP_PEPSI
                 txtDiemDat.Text = GVCTTB.CurrentRow.Cells[6].Value.ToString();
                 txtHinhAnh.Text= GVCTTB.CurrentRow.Cells[7].Value.ToString();
 
-                Bitmap anh = new Bitmap(@"C:\Users\User\OneDrive\Máy tính\QLNPP_PEPSICO\QTNPP_PEPSI\hinhnew\1080-x-540-go-v-central-retail.jpg");
+                Bitmap anh = new Bitmap(@"C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\hinhnew\1080-x-540-go-v-central-retail.jpg");
 
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = (Image)anh;
@@ -160,6 +167,14 @@ namespace QTNPP_PEPSI
             catch
             {
                 MessageBox.Show("Sửa dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txtDiemDat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }

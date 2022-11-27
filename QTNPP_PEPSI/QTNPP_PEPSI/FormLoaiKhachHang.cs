@@ -43,7 +43,7 @@ namespace QTNPP_PEPSI
             { }
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public string layMaTuDong_LoaiKH()
         {
             List<LOAIKHACHHANG> lst = new List<LOAIKHACHHANG>();
             lst = loaikh.getLoaiKH();
@@ -59,18 +59,16 @@ namespace QTNPP_PEPSI
 
             malkh += ma.ToString();
 
-            txtMaLoaiKH.Text = malkh;
+            return malkh;
+        }
 
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_LoaiKH();
             btnThem.Enabled = true;
             txtTenLoaiKH.Enabled = true;
             txtTenLoaiKH.Clear();
             txtTenLoaiKH.Focus();
-        }
-
-        private void clear()
-        {
-            txtMaLoaiKH.Clear();
-            txtTenLoaiKH.Clear();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -97,7 +95,8 @@ namespace QTNPP_PEPSI
                 {
                     MessageBox.Show("Xóa dữ liệu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     GVLoaiKH.DataSource = loaikh.load_LoaiKH();
-                    clear();
+                    txtMaLoaiKH.Clear();
+                    txtTenLoaiKH.Clear();
                 }
                 else
                 {

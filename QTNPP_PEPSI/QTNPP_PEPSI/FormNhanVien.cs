@@ -20,13 +20,8 @@ namespace QTNPP_PEPSI
             InitializeComponent();
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public string layMaTuDong_NV()
         {
-            txtTenDN.Enabled = true;
-            txtSDT.Enabled = true;
-            txtHoTen.Enabled = true;
-            txtDiaChi.Enabled = true;
-            txtMatKhau.Enabled = true;
             List<NHANVIEN> lst = new List<NHANVIEN>();
             lst = nv.getNhanVien();
             string a = GVNhanVien.Rows[GVNhanVien.Rows.Count - 1].Cells[0].Value.ToString();
@@ -39,17 +34,37 @@ namespace QTNPP_PEPSI
             else
                 manv = manv + "";
             manv += ma;
-            //================================================//
 
-            txtMaNV.Text = manv;
+            return manv;
+        }
+
+        private void clear()
+        {
             txtTenDN.Clear();
+            txtTenDN.Focus();
             txtMatKhau.Clear();
             txtSDT.Clear();
             txtHoTen.Clear();
+            dTNgaySinh.ResetText();
             txtDiaChi.Clear();
             txtLuongCoBan.Clear();
             txtCMND.Clear();
+            dTNgayBDL.ResetText();
+            dTNgayKTL.ResetText();
+        }
+
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_NV();
+            clear();
+            txtTenDN.Focus();
             cbbTrinhDo.SelectedIndex = 0;
+
+            txtTenDN.Enabled = true;
+            txtSDT.Enabled = true;
+            txtHoTen.Enabled = true;
+            txtDiaChi.Enabled = true;
+            txtMatKhau.Enabled = true;
             btnThem.Enabled = true;   
         }
 
@@ -114,6 +129,10 @@ namespace QTNPP_PEPSI
                     break;
                 }
             }
+
+            //không cho nhập dữ liệu vào combobox
+            this.cbbMaNhomNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbTrinhDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             txtLuongCoBan.Enabled = true;
             btnThem.Enabled = false;
@@ -333,9 +352,9 @@ namespace QTNPP_PEPSI
 
             }
             int checkcmnd = int.Parse(cmnd.Length.ToString());
-            if (checkcmnd > 10)
+            if (checkcmnd > 13)
             {
-                MessageBox.Show("Số CMND không được lớn hơn 10!", "Thông báo");
+                MessageBox.Show("Số CMND không được lớn hơn 12!", "Thông báo");
                 txtCMND.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
                 return;
             }
@@ -359,6 +378,44 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLuongCoBan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHoTen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

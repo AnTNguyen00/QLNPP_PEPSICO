@@ -28,6 +28,7 @@ namespace QTNPP_PEPSI
             {
                 GvChamCong.DataSource = chamcong.load_ChamCongNV(FormDangNhap.nv.MANV);
                 txtMaChamCong.Text = GvChamCong.Rows[GvChamCong.Rows.Count - 1].Cells[0].Value.ToString();
+                txtMaChamCong.Focus();
                 panelEx1.Visible = false;
                 panelEx2.Visible = false;
             }
@@ -38,6 +39,9 @@ namespace QTNPP_PEPSI
                 cbbMaNhanVien.ValueMember = "MANV";
                 cbbMaNhanVien.DisplayMember = "HOTENNV";
             }
+
+            //không cho nhập dữ liệu vào combobox
+            this.cbbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         }
 
         private void GvChamCong_Click(object sender, EventArgs e)
@@ -148,6 +152,30 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtSoNgayLam_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtThang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNam_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -449,6 +449,7 @@ namespace QTNPP_PEPSI
             this.txtHoTen.PreventEnterBeep = true;
             this.txtHoTen.Size = new System.Drawing.Size(195, 22);
             this.txtHoTen.TabIndex = 5;
+            this.txtHoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTen_KeyPress);
             // 
             // labelX6
             // 
@@ -492,6 +493,7 @@ namespace QTNPP_PEPSI
             this.txtSDT.PreventEnterBeep = true;
             this.txtSDT.Size = new System.Drawing.Size(195, 22);
             this.txtSDT.TabIndex = 3;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // cbbMaNhomNV
             // 
@@ -589,6 +591,7 @@ namespace QTNPP_PEPSI
             this.txtCMND.PreventEnterBeep = true;
             this.txtCMND.Size = new System.Drawing.Size(196, 22);
             this.txtCMND.TabIndex = 9;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
             // 
             // labelX5
             // 
@@ -693,6 +696,7 @@ namespace QTNPP_PEPSI
             this.txtLuongCoBan.Size = new System.Drawing.Size(195, 22);
             this.txtLuongCoBan.TabIndex = 8;
             this.txtLuongCoBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLuongCoBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLuongCoBan_KeyPress);
             // 
             // dTNgaySinh
             // 

@@ -46,6 +46,10 @@ namespace QTNPP_PEPSI
             txtDiaChi.Text = GVKhachHang.CurrentRow.Cells[6].Value.ToString();
             txtSDT.Text = GVKhachHang.CurrentRow.Cells[7].Value.ToString();
 
+            //không cho nhập dữ liệu vào combobox
+            this.cbbLoaiKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbQuanHuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             btnThem.Enabled = false;
             txtMaKhachHang.Enabled = false;
         }
@@ -106,7 +110,7 @@ namespace QTNPP_PEPSI
             { }
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public string layMaTuDong_KH()
         {
             List<KHACHHANG> lst = new List<KHACHHANG>();
             lst = kh.getKhachHang();
@@ -121,21 +125,26 @@ namespace QTNPP_PEPSI
                 makh = makh + "";
             makh += ma;
 
+            return makh;
+        }
 
-            txtMaKhachHang.Text = makh;
-            btnThem.Enabled = true;
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_KH();
+            
             txtHoTenKH.Clear();
-
+            txtHoTenKH.Focus();
+            DTPNgaysinh.ResetText();
             txtDiaChi.Clear();
             txtSDT.Clear();
+
             cbbLoaiKH.SelectedIndex = 0;
             cbbQuanHuyen.SelectedIndex = 0;
 
             txtDiaChi.Enabled = true;
             txtHoTenKH.Enabled = true;
             txtSDT.Enabled = true;
-
-            txtHoTenKH.Focus();
+            btnThem.Enabled = true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -249,6 +258,22 @@ namespace QTNPP_PEPSI
         {
             FormLoaiKhachHang formNew = new FormLoaiKhachHang();
             formNew.Show();
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHoTenKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
