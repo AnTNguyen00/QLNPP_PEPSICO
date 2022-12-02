@@ -51,6 +51,11 @@ namespace QTNPP_PEPSI
 
             //không cho nhập dữ liệu vào combobox
             this.cbbTenKhachHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+<<<<<<< HEAD
+=======
+            this.cbbMaLoaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbMaSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.cbbDonViTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             txtVAT.Enabled = false;

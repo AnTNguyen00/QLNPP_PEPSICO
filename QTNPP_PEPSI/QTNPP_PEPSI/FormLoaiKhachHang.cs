@@ -37,6 +37,7 @@ namespace QTNPP_PEPSI
             txtMaLoaiKH.Enabled = false;
         }
 
+
         public void layMaTuDong_LoaiKH()
         {
             List<LOAIKHACHHANG> lst = new List<LOAIKHACHHANG>();

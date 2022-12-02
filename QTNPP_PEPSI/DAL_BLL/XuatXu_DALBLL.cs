@@ -24,6 +24,7 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
         #region Tìm kiếm xuất xứ
         public IQueryable search_TenXX(string ten)
         {
@@ -38,6 +39,8 @@ namespace DAL_BLL
 
         #endregion
 
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu xuất xứ theo sản phẩm
         public IQueryable load_TenXuatXu()
         {

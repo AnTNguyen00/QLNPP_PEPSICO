@@ -24,6 +24,7 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
         #region Tìm kiếm hãng sản xuất
         public IQueryable search_TenHSX(string ten)
         {
@@ -37,6 +38,8 @@ namespace DAL_BLL
 
         #endregion
 
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu hãng sản xuất theo sản phẩm
         public IQueryable load_TenHSX()
         {

@@ -49,13 +49,16 @@ namespace QTNPP_PEPSI
         {
             try
             {
+
                 txtMaXuatXu.Text = GVXuatXu.CurrentRow.Cells[1].Value.ToString();
                 txtTenXuatXu.Text = GVXuatXu.CurrentRow.Cells[2].Value.ToString();
                 txtLoaiXuatXu.Text = GVXuatXu.CurrentRow.Cells[3].Value.ToString();
+
             }
             catch
             { }
         }
+
 
         public void LayMaTuDong_XX()
         {

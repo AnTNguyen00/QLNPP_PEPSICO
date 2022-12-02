@@ -28,7 +28,6 @@ namespace QTNPP_PEPSI
             {
                 GvChamCong.DataSource = chamcong.load_ChamCongNV(FormDangNhap.nv.MANV);
 
-                txtMaChamCong.Clear();
                 txtMaChamCong.Focus();
                 panelEx1.Visible = false;
                 panelEx2.Visible = false;
@@ -85,6 +84,7 @@ namespace QTNPP_PEPSI
                 GvChamCong.Columns[6].HeaderText = "Số ngày làm";
                 GvChamCong.Columns[6].Width = 150;
             }
+
 
             //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
             cbbMaNhanVien.AutoCompleteMode = AutoCompleteMode.Suggest;
@@ -227,13 +227,5 @@ namespace QTNPP_PEPSI
             }
         }
 
-        private void GvChamCong_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            if (e.RowIndex < 0 || e.RowIndex == this.GvChamCong.NewRowIndex)
-                return;
-
-            if (e.ColumnIndex == this.GvChamCong.Columns["STT"].Index)
-                e.Value = e.RowIndex + 1;
-        }
     }
 }

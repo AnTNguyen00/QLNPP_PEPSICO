@@ -37,6 +37,7 @@ namespace QTNPP_PEPSI
             GVHangSX.Columns[2].HeaderText = "Tên hãng sản xuất";
             GVHangSX.Columns[2].Width = 250;
 
+
             btnThem.Enabled = false;
             txtMaHangSX.Enabled = false;
         }
@@ -51,6 +52,7 @@ namespace QTNPP_PEPSI
             catch
             { }
         }
+
 
         public void layMaTuDong_HSX()
         {
@@ -142,6 +144,7 @@ namespace QTNPP_PEPSI
             this.Close();
         }
 
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if (btnTimKiem.Text == "Clear")
@@ -172,5 +175,6 @@ namespace QTNPP_PEPSI
             if (e.ColumnIndex == this.GVHangSX.Columns["STT"].Index)
                 e.Value = e.RowIndex + 1;
         }
+
     }
 }

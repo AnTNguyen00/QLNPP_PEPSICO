@@ -376,6 +376,7 @@ namespace QTNPP_PEPSI
             this.GVNhaCC.RowTemplate.Height = 24;
             this.GVNhaCC.Size = new System.Drawing.Size(1177, 301);
             this.GVNhaCC.TabIndex = 46;
+<<<<<<< HEAD
             this.GVNhaCC.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.GVNhaCC_CellFormatting);
             this.GVNhaCC.Click += new System.EventHandler(this.GVNhaCC_Click);
             // 
@@ -387,6 +388,9 @@ namespace QTNPP_PEPSI
             this.STT.Name = "STT";
             this.STT.ReadOnly = true;
             this.STT.Width = 64;
+=======
+            this.GVNhaCC.Click += new System.EventHandler(this.GVNhaCC_Click);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // 
             // panelEx2
             // 

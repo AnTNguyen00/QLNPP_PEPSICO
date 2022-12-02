@@ -711,6 +711,152 @@ namespace QTNPP_PEPSI
             this.txtMaNV.Size = new System.Drawing.Size(196, 22);
             this.txtMaNV.TabIndex = 0;
             // 
+<<<<<<< HEAD
+=======
+            // txtHoTen
+            // 
+            // 
+            // 
+            // 
+            this.txtHoTen.Border.Class = "TextBoxBorder";
+            this.txtHoTen.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtHoTen.Enabled = false;
+            this.txtHoTen.Location = new System.Drawing.Point(529, 10);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.PreventEnterBeep = true;
+            this.txtHoTen.Size = new System.Drawing.Size(195, 22);
+            this.txtHoTen.TabIndex = 5;
+            this.txtHoTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoTen_KeyPress);
+            // 
+            // labelX6
+            // 
+            this.labelX6.AutoSize = true;
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX6.Location = new System.Drawing.Point(28, 144);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(102, 22);
+            this.labelX6.TabIndex = 63;
+            this.labelX6.Text = "Số điện thoại";
+            // 
+            // txtTenDN
+            // 
+            // 
+            // 
+            // 
+            this.txtTenDN.Border.Class = "TextBoxBorder";
+            this.txtTenDN.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTenDN.Enabled = false;
+            this.txtTenDN.Location = new System.Drawing.Point(147, 56);
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.PreventEnterBeep = true;
+            this.txtTenDN.Size = new System.Drawing.Size(195, 22);
+            this.txtTenDN.TabIndex = 1;
+            // 
+            // txtSDT
+            // 
+            // 
+            // 
+            // 
+            this.txtSDT.Border.Class = "TextBoxBorder";
+            this.txtSDT.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSDT.Enabled = false;
+            this.txtSDT.Location = new System.Drawing.Point(147, 144);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.PreventEnterBeep = true;
+            this.txtSDT.Size = new System.Drawing.Size(195, 22);
+            this.txtSDT.TabIndex = 3;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
+            // 
+            // cbbMaNhomNV
+            // 
+            this.cbbMaNhomNV.DisplayMember = "Text";
+            this.cbbMaNhomNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbMaNhomNV.FormattingEnabled = true;
+            this.cbbMaNhomNV.ItemHeight = 16;
+            this.cbbMaNhomNV.Location = new System.Drawing.Point(147, 199);
+            this.cbbMaNhomNV.Name = "cbbMaNhomNV";
+            this.cbbMaNhomNV.Size = new System.Drawing.Size(196, 22);
+            this.cbbMaNhomNV.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbbMaNhomNV.TabIndex = 4;
+            // 
+            // labelX7
+            // 
+            this.labelX7.AutoSize = true;
+            this.labelX7.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX7.Location = new System.Drawing.Point(25, 199);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(104, 22);
+            this.labelX7.TabIndex = 65;
+            this.labelX7.Text = "Mã Nhóm NV";
+            // 
+            // labelX11
+            // 
+            this.labelX11.AutoSize = true;
+            this.labelX11.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX11.Location = new System.Drawing.Point(840, 144);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(68, 22);
+            this.labelX11.TabIndex = 85;
+            this.labelX11.Text = "Trình Độ";
+            // 
+            // labelX10
+            // 
+            this.labelX10.AutoSize = true;
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX10.Location = new System.Drawing.Point(433, 100);
+            this.labelX10.Name = "labelX10";
+            this.labelX10.Size = new System.Drawing.Size(81, 22);
+            this.labelX10.TabIndex = 69;
+            this.labelX10.Text = "Ngày Sinh";
+            // 
+            // cbbTrinhDo
+            // 
+            this.cbbTrinhDo.DisplayMember = "Text";
+            this.cbbTrinhDo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbTrinhDo.FormattingEnabled = true;
+            this.cbbTrinhDo.ItemHeight = 16;
+            this.cbbTrinhDo.Location = new System.Drawing.Point(918, 148);
+            this.cbbTrinhDo.Name = "cbbTrinhDo";
+            this.cbbTrinhDo.Size = new System.Drawing.Size(196, 22);
+            this.cbbTrinhDo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbbTrinhDo.TabIndex = 12;
+            // 
+            // labelX8
+            // 
+            this.labelX8.AutoSize = true;
+            this.labelX8.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX8.Location = new System.Drawing.Point(457, 10);
+            this.labelX8.Name = "labelX8";
+            this.labelX8.Size = new System.Drawing.Size(58, 22);
+            this.labelX8.TabIndex = 67;
+            this.labelX8.Text = "Họ Tên";
+            // 
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // txtCMND
             // 
             // 
@@ -724,6 +870,159 @@ namespace QTNPP_PEPSI
             this.txtCMND.Size = new System.Drawing.Size(196, 22);
             this.txtCMND.TabIndex = 9;
             this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
+<<<<<<< HEAD
+=======
+            // 
+            // labelX5
+            // 
+            this.labelX5.AutoSize = true;
+            this.labelX5.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.Location = new System.Drawing.Point(457, 148);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(58, 22);
+            this.labelX5.TabIndex = 73;
+            this.labelX5.Text = "Địa Chỉ";
+            // 
+            // labelX12
+            // 
+            this.labelX12.AutoSize = true;
+            this.labelX12.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX12.Location = new System.Drawing.Point(855, 10);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(53, 22);
+            this.labelX12.TabIndex = 79;
+            this.labelX12.Text = "CMND";
+            // 
+            // txtDiaChi
+            // 
+            // 
+            // 
+            // 
+            this.txtDiaChi.Border.Class = "TextBoxBorder";
+            this.txtDiaChi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtDiaChi.Enabled = false;
+            this.txtDiaChi.Location = new System.Drawing.Point(528, 144);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.PreventEnterBeep = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(195, 22);
+            this.txtDiaChi.TabIndex = 7;
+            // 
+            // labelX13
+            // 
+            this.labelX13.AutoSize = true;
+            this.labelX13.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX13.Location = new System.Drawing.Point(758, 56);
+            this.labelX13.Name = "labelX13";
+            this.labelX13.Size = new System.Drawing.Size(146, 22);
+            this.labelX13.TabIndex = 80;
+            this.labelX13.Text = "Ngày Bắt Đầu Làm";
+            // 
+            // labelX3
+            // 
+            this.labelX3.AutoSize = true;
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.Location = new System.Drawing.Point(401, 196);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(111, 22);
+            this.labelX3.TabIndex = 75;
+            this.labelX3.Text = "Lương Cơ Bản";
+            // 
+            // labelX14
+            // 
+            this.labelX14.AutoSize = true;
+            this.labelX14.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX14.Location = new System.Drawing.Point(750, 100);
+            this.labelX14.Name = "labelX14";
+            this.labelX14.Size = new System.Drawing.Size(152, 22);
+            this.labelX14.TabIndex = 81;
+            this.labelX14.Text = "Ngày Kết Thúc Làm";
+            // 
+            // txtLuongCoBan
+            // 
+            // 
+            // 
+            // 
+            this.txtLuongCoBan.Border.Class = "TextBoxBorder";
+            this.txtLuongCoBan.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtLuongCoBan.Enabled = false;
+            this.txtLuongCoBan.Location = new System.Drawing.Point(529, 196);
+            this.txtLuongCoBan.Name = "txtLuongCoBan";
+            this.txtLuongCoBan.PreventEnterBeep = true;
+            this.txtLuongCoBan.Size = new System.Drawing.Size(195, 22);
+            this.txtLuongCoBan.TabIndex = 8;
+            this.txtLuongCoBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLuongCoBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLuongCoBan_KeyPress);
+            // 
+            // dTNgaySinh
+            // 
+            // 
+            // 
+            // 
+            this.dTNgaySinh.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dTNgaySinh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dTNgaySinh.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dTNgaySinh.ButtonDropDown.Visible = true;
+            this.dTNgaySinh.IsPopupCalendarOpen = false;
+            this.dTNgaySinh.Location = new System.Drawing.Point(529, 100);
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.dTNgaySinh.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dTNgaySinh.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dTNgaySinh.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dTNgaySinh.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dTNgaySinh.MonthCalendar.DisplayMonth = new System.DateTime(2021, 5, 1, 0, 0, 0, 0);
+            // 
+            // 
+            // 
+            this.dTNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dTNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dTNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dTNgaySinh.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dTNgaySinh.MonthCalendar.TodayButtonVisible = true;
+            this.dTNgaySinh.Name = "dTNgaySinh";
+            this.dTNgaySinh.Size = new System.Drawing.Size(196, 22);
+            this.dTNgaySinh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dTNgaySinh.TabIndex = 6;
+            this.dTNgaySinh.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // 
             // groupPanel2
             // 

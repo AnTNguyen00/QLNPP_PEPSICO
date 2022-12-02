@@ -29,7 +29,7 @@ namespace QTNPP_PEPSI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.GVXuatXu = new DevComponents.DotNetBar.Controls.DataGridViewX();
@@ -148,6 +148,7 @@ namespace QTNPP_PEPSI
             // 
             this.GVXuatXu.BackgroundColor = System.Drawing.Color.White;
             this.GVXuatXu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.GVXuatXu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -158,6 +159,16 @@ namespace QTNPP_PEPSI
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GVXuatXu.DefaultCellStyle = dataGridViewCellStyle1;
+=======
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GVXuatXu.DefaultCellStyle = dataGridViewCellStyle2;
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.GVXuatXu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.GVXuatXu.Location = new System.Drawing.Point(11, 6);
             this.GVXuatXu.Name = "GVXuatXu";
@@ -165,6 +176,7 @@ namespace QTNPP_PEPSI
             this.GVXuatXu.RowTemplate.Height = 24;
             this.GVXuatXu.Size = new System.Drawing.Size(811, 235);
             this.GVXuatXu.TabIndex = 46;
+<<<<<<< HEAD
             this.GVXuatXu.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.GVXuatXu_CellFormatting);
             this.GVXuatXu.Click += new System.EventHandler(this.GVXuatXu_Click);
             // 
@@ -176,6 +188,9 @@ namespace QTNPP_PEPSI
             this.STT.Name = "STT";
             this.STT.ReadOnly = true;
             this.STT.Width = 64;
+=======
+            this.GVXuatXu.Click += new System.EventHandler(this.GVXuatXu_Click);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // 
             // panelEx2
             // 
@@ -352,6 +367,10 @@ namespace QTNPP_PEPSI
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 72;
+<<<<<<< HEAD
+=======
+            this.groupPanel1.Text = "Thông tin xuất xứ";
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // 
             // panelEx1
             // 
@@ -364,9 +383,15 @@ namespace QTNPP_PEPSI
             this.panelEx1.Controls.Add(this.txtMaXuatXu);
             this.panelEx1.Controls.Add(this.labelX1);
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+<<<<<<< HEAD
             this.panelEx1.Location = new System.Drawing.Point(13, 14);
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Size = new System.Drawing.Size(809, 179);
+=======
+            this.panelEx1.Location = new System.Drawing.Point(13, 3);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(601, 179);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -384,10 +409,17 @@ namespace QTNPP_PEPSI
             this.txtLoaiXuatXu.Border.Class = "TextBoxBorder";
             this.txtLoaiXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtLoaiXuatXu.Enabled = false;
+<<<<<<< HEAD
             this.txtLoaiXuatXu.Location = new System.Drawing.Point(315, 127);
             this.txtLoaiXuatXu.Name = "txtLoaiXuatXu";
             this.txtLoaiXuatXu.PreventEnterBeep = true;
             this.txtLoaiXuatXu.Size = new System.Drawing.Size(276, 22);
+=======
+            this.txtLoaiXuatXu.Location = new System.Drawing.Point(257, 129);
+            this.txtLoaiXuatXu.Name = "txtLoaiXuatXu";
+            this.txtLoaiXuatXu.PreventEnterBeep = true;
+            this.txtLoaiXuatXu.Size = new System.Drawing.Size(195, 22);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.txtLoaiXuatXu.TabIndex = 60;
             this.txtLoaiXuatXu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLoaiXuatXu_KeyPress);
             // 
@@ -399,10 +431,17 @@ namespace QTNPP_PEPSI
             this.txtTenXuatXu.Border.Class = "TextBoxBorder";
             this.txtTenXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTenXuatXu.Enabled = false;
+<<<<<<< HEAD
             this.txtTenXuatXu.Location = new System.Drawing.Point(315, 76);
             this.txtTenXuatXu.Name = "txtTenXuatXu";
             this.txtTenXuatXu.PreventEnterBeep = true;
             this.txtTenXuatXu.Size = new System.Drawing.Size(276, 22);
+=======
+            this.txtTenXuatXu.Location = new System.Drawing.Point(257, 78);
+            this.txtTenXuatXu.Name = "txtTenXuatXu";
+            this.txtTenXuatXu.PreventEnterBeep = true;
+            this.txtTenXuatXu.Size = new System.Drawing.Size(195, 22);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.txtTenXuatXu.TabIndex = 58;
             this.txtTenXuatXu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenXuatXu_KeyPress);
             // 
@@ -415,7 +454,11 @@ namespace QTNPP_PEPSI
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.labelX2.Location = new System.Drawing.Point(183, 127);
+=======
+            this.labelX2.Location = new System.Drawing.Point(125, 129);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(100, 22);
             this.labelX2.TabIndex = 59;
@@ -430,7 +473,11 @@ namespace QTNPP_PEPSI
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.labelX4.Location = new System.Drawing.Point(179, 76);
+=======
+            this.labelX4.Location = new System.Drawing.Point(121, 78);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(101, 22);
             this.labelX4.TabIndex = 53;
@@ -443,10 +490,17 @@ namespace QTNPP_PEPSI
             // 
             this.txtMaXuatXu.Border.Class = "TextBoxBorder";
             this.txtMaXuatXu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+<<<<<<< HEAD
             this.txtMaXuatXu.Location = new System.Drawing.Point(315, 26);
             this.txtMaXuatXu.Name = "txtMaXuatXu";
             this.txtMaXuatXu.PreventEnterBeep = true;
             this.txtMaXuatXu.Size = new System.Drawing.Size(277, 22);
+=======
+            this.txtMaXuatXu.Location = new System.Drawing.Point(257, 28);
+            this.txtMaXuatXu.Name = "txtMaXuatXu";
+            this.txtMaXuatXu.PreventEnterBeep = true;
+            this.txtMaXuatXu.Size = new System.Drawing.Size(196, 22);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.txtMaXuatXu.TabIndex = 57;
             // 
             // labelX1
@@ -458,7 +512,11 @@ namespace QTNPP_PEPSI
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.labelX1.Location = new System.Drawing.Point(189, 26);
+=======
+            this.labelX1.Location = new System.Drawing.Point(131, 28);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(91, 22);
             this.labelX1.TabIndex = 31;

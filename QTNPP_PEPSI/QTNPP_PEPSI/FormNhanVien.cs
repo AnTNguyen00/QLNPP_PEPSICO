@@ -20,6 +20,7 @@ namespace QTNPP_PEPSI
             InitializeComponent();
         }
 
+
         public void layMaTuDong_NV()
         {
             List<NHANVIEN> lst = new List<NHANVIEN>();
@@ -462,6 +463,7 @@ namespace QTNPP_PEPSI
             }
         }
 
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             FormTimKiemNhanVien formNew = new FormTimKiemNhanVien();
@@ -481,5 +483,6 @@ namespace QTNPP_PEPSI
                 e.Value = new String('*', e.Value.ToString().Length);
             }
         }
+
     }
 }

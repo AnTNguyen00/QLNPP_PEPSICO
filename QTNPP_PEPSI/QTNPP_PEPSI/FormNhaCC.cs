@@ -67,11 +67,13 @@ namespace QTNPP_PEPSI
         {
             try
             {
+
                 txtMaNCC.Text = GVNhaCC.CurrentRow.Cells[1].Value.ToString();
                 cbbQuanHuyen.Text = GVNhaCC.CurrentRow.Cells[2].Value.ToString();
                 txtTenNCC.Text = GVNhaCC.CurrentRow.Cells[3].Value.ToString();
                 txtDiaChi.Text = GVNhaCC.CurrentRow.Cells[4].Value.ToString();
                 txtSDT.Text = GVNhaCC.CurrentRow.Cells[5].Value.ToString();
+
             }
             catch
             { }
@@ -85,6 +87,7 @@ namespace QTNPP_PEPSI
             txtDiaChi.Clear();
             txtSDT.Clear();
         }
+
 
         public void layMaTuDong_NCC()
         {
@@ -103,6 +106,7 @@ namespace QTNPP_PEPSI
             mancc += ma.ToString();
 
             txtMaNCC.Text = mancc;
+
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -111,7 +115,9 @@ namespace QTNPP_PEPSI
             btnThem.Enabled = true;
             cbbQuanHuyen.ResetText();
             txtTenNCC.Clear();
+
             txtTenNCC.Enabled = true;
+
             txtDiaChi.Clear();
             txtSDT.Clear();
             txtTenNCC.Focus();
@@ -193,6 +199,7 @@ namespace QTNPP_PEPSI
             }
         }
 
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if (btnTimKiem.Text == "Clear")
@@ -222,5 +229,6 @@ namespace QTNPP_PEPSI
             if (e.ColumnIndex == this.GVNhaCC.Columns["STT"].Index)
                 e.Value = e.RowIndex + 1;
         }
+
     }
 }

@@ -76,6 +76,10 @@ namespace QTNPP_PEPSI
             cbbQuanHuyen.AutoCompleteMode = AutoCompleteMode.Suggest;
             cbbQuanHuyen.AutoCompleteSource = AutoCompleteSource.ListItems;
 
+            //không cho nhập dữ liệu vào combobox
+            this.cbbLoaiKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbQuanHuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
             btnThem.Enabled = false;
             txtMaKhachHang.Enabled = false;
         }
@@ -136,7 +140,7 @@ namespace QTNPP_PEPSI
             { }
         }
 
-        public void layMaTuDong_KH()
+	public void layMaTuDong_KH()
         {
             List<KHACHHANG> lst = new List<KHACHHANG>();
             lst = kh.getKhachHang();
@@ -302,6 +306,7 @@ namespace QTNPP_PEPSI
             }
         }
 
+
         public void clear()
         {
             txtMaKhachHang.Clear();
@@ -343,5 +348,6 @@ namespace QTNPP_PEPSI
             if (e.ColumnIndex == this.GVKhachHang.Columns["STT"].Index)
                 e.Value = e.RowIndex + 1;
         }
+
     }
 }

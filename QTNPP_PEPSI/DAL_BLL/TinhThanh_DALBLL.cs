@@ -18,6 +18,7 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
         #region Tìm kiếm tỉnh thành
         public IQueryable search_TenTT(string ten)
         {
@@ -31,6 +32,8 @@ namespace DAL_BLL
 
         #endregion
 
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Thêm xóa tỉnh thành
 
         public bool them_TinhThanh(string maTT, string tenTT)

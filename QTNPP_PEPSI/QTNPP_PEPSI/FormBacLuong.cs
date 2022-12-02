@@ -147,15 +147,6 @@ namespace QTNPP_PEPSI
             }
         }
 
-        private void btnTimKiemCTBL_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnShowCTBL_Click(object sender, EventArgs e)
-        {
-            FormBacLuong_Load(sender, e);
-        }
 
         private void GVBacLuong_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -249,6 +240,7 @@ namespace QTNPP_PEPSI
             catch
             {
                 MessageBox.Show("Xoá dữ liệu không thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
     }

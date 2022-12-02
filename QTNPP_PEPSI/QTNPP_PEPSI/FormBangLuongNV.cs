@@ -282,5 +282,6 @@ namespace QTNPP_PEPSI
             if (e.ColumnIndex == this.GVBangLuong.Columns["STT"].Index)
                 e.Value = e.RowIndex + 1;
         }
+
     }
 }

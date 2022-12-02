@@ -88,6 +88,7 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
         #region Tìm kiếm nhân viên
         public List<NHOMNHANVIEN> load_NhomNV1()
         {
@@ -208,6 +209,8 @@ namespace DAL_BLL
 
         #endregion
 
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu nhân viên cho quản lý phân quyền
         public List<NHANVIEN> load_TenNV0()
         {

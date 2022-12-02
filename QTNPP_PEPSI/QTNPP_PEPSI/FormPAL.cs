@@ -27,6 +27,7 @@ namespace QTNPP_PEPSI
             {
                 btnSua.Enabled = btnTaoMoi.Enabled = btnThem.Enabled = btnXoa.Enabled = false;
             }
+
             GVPAL.DataSource = pal.load_PAL();
 
             txtMaPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
@@ -37,6 +38,7 @@ namespace QTNPP_PEPSI
             GVPAL.Columns[2].HeaderText = "Tên Pallet";
             GVPAL.Columns[2].Width = 280;
 
+
             btnThem.Enabled = false;
             txtMaPAL.Enabled = false;
         }
@@ -45,12 +47,15 @@ namespace QTNPP_PEPSI
         {
             try
             {
+
                 txtMaPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
                 txtTenPAL.Text = GVPAL.CurrentRow.Cells[2].Value.ToString();
+
             }
             catch
             { }
         }
+
 
         public void layMaTuDong_PAL()
         {

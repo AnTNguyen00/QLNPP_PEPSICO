@@ -29,7 +29,11 @@ namespace QTNPP_PEPSI
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
@@ -628,6 +632,7 @@ namespace QTNPP_PEPSI
             // 
             this.GVBangLuong.BackgroundColor = System.Drawing.Color.White;
             this.GVBangLuong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.GVBangLuong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -638,6 +643,16 @@ namespace QTNPP_PEPSI
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GVBangLuong.DefaultCellStyle = dataGridViewCellStyle1;
+=======
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GVBangLuong.DefaultCellStyle = dataGridViewCellStyle4;
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.GVBangLuong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.GVBangLuong.Location = new System.Drawing.Point(9, 3);
             this.GVBangLuong.Name = "GVBangLuong";

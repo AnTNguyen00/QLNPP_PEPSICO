@@ -35,6 +35,7 @@ namespace QTNPP_PEPSI
             cbbMaPAL.ValueMember = "MAPAL";
 
             //chỉ định dòng đầu vào textbox
+
             txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
             GVLoaiSP.Columns[1].HeaderText = "Mã loại sản phẩm";
             GVLoaiSP.Columns[1].Width = 150;
@@ -51,6 +52,7 @@ namespace QTNPP_PEPSI
             cbbMaPAL.AutoCompleteMode = AutoCompleteMode.Suggest;
             cbbMaPAL.AutoCompleteSource = AutoCompleteSource.ListItems;
 
+
             txtMaLoaiSP.Enabled = false;
             btnThem.Enabled = false;           
         }
@@ -59,13 +61,16 @@ namespace QTNPP_PEPSI
         {
             try
             {
+
                 txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
                 cbbMaPAL.Text = GVLoaiSP.CurrentRow.Cells[2].Value.ToString();
                 txtTenLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[3].Value.ToString();
+
             }
             catch
             { }
         }
+
 
         public void layMaTuDong_LoaiSP()
         {
@@ -197,5 +202,6 @@ namespace QTNPP_PEPSI
             if (e.ColumnIndex == this.GVLoaiSP.Columns["STT"].Index)
                 e.Value = e.RowIndex + 1;
         }
+
     }
 }

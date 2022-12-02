@@ -36,6 +36,7 @@ namespace QTNPP_PEPSI
             this.Close();
         }
 
+
         public void layMaTuDong_TBTL()
         {
             List<CTTB_CTTL> lst = new List<CTTB_CTTL>();
@@ -102,6 +103,7 @@ namespace QTNPP_PEPSI
             cbbMaSP.DisplayMember = "TENSANPHAM";
             cbbMaSP.ValueMember = "MASP";
 
+
             txtMaCT.Text = GVCTTB.CurrentRow.Cells[1].Value.ToString();
             GVCTTB.Columns[1].HeaderText = "Mã chương trình";
             GVCTTB.Columns[1].Width = 110;
@@ -137,6 +139,7 @@ namespace QTNPP_PEPSI
             //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
             cbbMaSP.AutoCompleteMode = AutoCompleteMode.Suggest;
             cbbMaSP.AutoCompleteSource = AutoCompleteSource.ListItems;
+
 
             txtTenCT.Enabled = true;
         }
@@ -210,6 +213,7 @@ namespace QTNPP_PEPSI
                 e.Handled = true;
             }
         }
+
 
         public void clear()
         {

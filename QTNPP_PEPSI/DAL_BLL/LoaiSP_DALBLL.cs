@@ -24,6 +24,7 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
         #region Tìm kiếm loại sản phẩm
         public IQueryable search_TenLoaiSP(string ten)
         {
@@ -38,6 +39,8 @@ namespace DAL_BLL
 
         #endregion
 
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu loại sản phẩm theo sản phẩm
         public IQueryable load_TenLoaiSP()
         {

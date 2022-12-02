@@ -153,6 +153,7 @@ namespace QTNPP_PEPSI
                 txtDonGia.Text = GVSP.CurrentRow.Cells[15].Value.ToString();
                 txtSoLuongTon.Text = GVSP.CurrentRow.Cells[16].Value.ToString();
 
+
                 Bitmap anh = new Bitmap(@"C:\Users\Admin\OneDrive\Desktop\QTNPP_PEPSI\HinhAnhSP\" + txthinhanh.Text);
 
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -171,6 +172,7 @@ namespace QTNPP_PEPSI
                 txthinhanh.Text = oFile.FileName.Substring(oFile.FileName.LastIndexOf("\\") + 1);
             }
         }
+
 
         public void LayMaTuDong_SP()
         {
@@ -192,7 +194,6 @@ namespace QTNPP_PEPSI
 
         private void clear()
         {
-            cbbHangSX.Text = string.Empty;
             cbbHangSX.Text = string.Empty;
             cbbMaXuatXu.Text = string.Empty;
             cbbMaLoai.Text = string.Empty;
@@ -337,6 +338,7 @@ namespace QTNPP_PEPSI
                 e.Handled = true;
             }
         }
+
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {

@@ -29,9 +29,9 @@ namespace QTNPP_PEPSI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.GVPAL = new DevComponents.DotNetBar.Controls.DataGridViewX();
@@ -146,15 +146,16 @@ namespace QTNPP_PEPSI
             // GVPAL
             // 
             this.GVPAL.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GVPAL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GVPAL.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.GVPAL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.GVPAL.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -165,33 +166,138 @@ namespace QTNPP_PEPSI
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GVPAL.DefaultCellStyle = dataGridViewCellStyle2;
+=======
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GVPAL.DefaultCellStyle = dataGridViewCellStyle17;
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.GVPAL.EnableHeadersVisualStyles = false;
             this.GVPAL.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.GVPAL.Location = new System.Drawing.Point(12, 11);
             this.GVPAL.Name = "GVPAL";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GVPAL.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GVPAL.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.GVPAL.RowHeadersWidth = 51;
             this.GVPAL.RowTemplate.Height = 24;
             this.GVPAL.Size = new System.Drawing.Size(866, 348);
             this.GVPAL.TabIndex = 46;
+<<<<<<< HEAD
             this.GVPAL.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.GVPAL_CellFormatting);
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             this.GVPAL.Click += new System.EventHandler(this.GVPAL_Click);
             // 
             // STT
             // 
+<<<<<<< HEAD
             this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.STT.HeaderText = "STT";
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
             this.STT.ReadOnly = true;
             this.STT.Width = 64;
+=======
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.btnSua);
+            this.panelEx2.Controls.Add(this.btnThoat);
+            this.panelEx2.Controls.Add(this.btnXoa);
+            this.panelEx2.Controls.Add(this.btnThem);
+            this.panelEx2.Controls.Add(this.btnTaoMoi);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Location = new System.Drawing.Point(18, 191);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(634, 58);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 67;
+            // 
+            // btnSua
+            // 
+            this.btnSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSua.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSua.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnSua.Location = new System.Drawing.Point(393, 16);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 31);
+            this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSua.TabIndex = 12;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThoat.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThoat.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnThoat.Location = new System.Drawing.Point(520, 16);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 31);
+            this.btnThoat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThoat.TabIndex = 11;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnXoa.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnXoa.Location = new System.Drawing.Point(273, 16);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 31);
+            this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnXoa.TabIndex = 8;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnThem.Location = new System.Drawing.Point(144, 16);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 31);
+            this.btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThem.TabIndex = 7;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnTaoMoi
+            // 
+            this.btnTaoMoi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnTaoMoi.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnTaoMoi.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnTaoMoi.Location = new System.Drawing.Point(25, 16);
+            this.btnTaoMoi.Name = "btnTaoMoi";
+            this.btnTaoMoi.Size = new System.Drawing.Size(75, 31);
+            this.btnTaoMoi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnTaoMoi.TabIndex = 6;
+            this.btnTaoMoi.Text = "Tạo Mới";
+            this.btnTaoMoi.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
             // 
             // groupPanel1
             // 
