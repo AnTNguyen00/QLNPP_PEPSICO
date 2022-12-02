@@ -36,8 +36,13 @@ namespace QTNPP_PEPSI
             cbbTinhThanh.ValueMember = "MATINHTHANH";
 
             //chỉ định dòng đầu vào textbox của tỉnh thành
-            txtMaTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[0].Value.ToString();
-            txtTenTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[1].Value.ToString();
+            txtMaTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[1].Value.ToString();
+            GvTinhThanh.Columns[1].HeaderText = "Mã tỉnh thành";
+            GvTinhThanh.Columns[1].Width = 140;
+
+            txtTenTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[2].Value.ToString();
+            GvTinhThanh.Columns[2].HeaderText = "Tên tỉnh thành";
+            GvTinhThanh.Columns[2].Width = 170;
 
             btnThemTT.Enabled = false;
             btnThemQH.Enabled = false;
@@ -52,9 +57,9 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[0].Value.ToString();
-                cbbTinhThanh.Text = GVQuanHuyen.CurrentRow.Cells[1].Value.ToString();
-                txtTenQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[2].Value.ToString();
+                txtMaQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[1].Value.ToString();
+                cbbTinhThanh.Text = GVQuanHuyen.CurrentRow.Cells[2].Value.ToString();
+                txtTenQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[3].Value.ToString();
 
                 List<TINHTHANH> lstTinhThanh = new List<TINHTHANH>();
                 lstTinhThanh = tinhthanh.load_TinhThanh();
@@ -62,7 +67,7 @@ namespace QTNPP_PEPSI
                 //Binding giá trị mã tỉnh thành sang combobox Tinh thanh
                 foreach (TINHTHANH i in lstTinhThanh)
                 {
-                    if (i.MATINHTHANH == GVQuanHuyen.CurrentRow.Cells[1].Value.ToString())
+                    if (i.MATINHTHANH == GVQuanHuyen.CurrentRow.Cells[2].Value.ToString())
                     {
                         cbbTinhThanh.SelectedItem = i;
                         break;
@@ -77,10 +82,22 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[0].Value.ToString();
-                txtTenTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[1].Value.ToString();
+                txtMaTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[1].Value.ToString();
+                txtTenTinhThanh.Text = GvTinhThanh.CurrentRow.Cells[2].Value.ToString();
 
-                GVQuanHuyen.DataSource = quanhuyen.getQuanHuyen1(GvTinhThanh.CurrentRow.Cells[0].Value.ToString());
+                GVQuanHuyen.DataSource = quanhuyen.getQuanHuyen1(GvTinhThanh.CurrentRow.Cells[1].Value.ToString());
+
+                txtMaQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[1].Value.ToString();
+                GVQuanHuyen.Columns[1].HeaderText = "Mã quận huyện";
+                GVQuanHuyen.Columns[1].Width = 110;
+
+                cbbTinhThanh.Text = GVQuanHuyen.CurrentRow.Cells[2].Value.ToString();
+                GVQuanHuyen.Columns[2].HeaderText = "Mã tỉnh thành";
+                GVQuanHuyen.Columns[2].Width = 100;
+
+                txtTenQuanHuyen.Text = GVQuanHuyen.CurrentRow.Cells[3].Value.ToString();
+                GVQuanHuyen.Columns[3].HeaderText = "Tên quận huyện";
+                GVQuanHuyen.Columns[3].Width = 120;
             }
             catch
             { }
@@ -129,7 +146,7 @@ namespace QTNPP_PEPSI
             }
             else
             {
-                MessageBox.Show("Thêm thất bại", "Thông báo");
+                MessageBox.Show("Thêm thất bại!", "Thông báo");
                 FormTinhThanh_QuanHuyen_Load(sender, e);
                 return;
             }
@@ -218,6 +235,87 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnTimKiemQH_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiemQH.Text == "Clear")
+            {
+                txtMaQuanHuyen.Clear();
+                cbbTinhThanh.ResetText();
+                txtTenQuanHuyen.Clear();
+                txtTenQuanHuyen.Enabled = true;
+                cbbTinhThanh.Enabled = true;
+                txtTenQuanHuyen.Focus();
+                btnTimKiemQH.Text = "Search";
+            }
+            else
+            {
+                GVQuanHuyen.DataSource = quanhuyen.search_MATT(cbbTinhThanh.Text);
+                GVQuanHuyen.DataSource = quanhuyen.search_TenQH(txtTenQuanHuyen.Text, GvTinhThanh.CurrentRow.Cells[1].Value.ToString());
+                btnTimKiemQH.Text = "Clear";
+            }
+        }
+
+        private void btnShowQH_Click(object sender, EventArgs e)
+        {
+            GVQuanHuyen.DataSource = quanhuyen.getQuanHuyen1(GvTinhThanh.CurrentRow.Cells[1].Value.ToString());
+        }
+
+        private void btnTimKiemTT_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiemTT.Text == "Clear")
+            {
+                txtMaTinhThanh.Clear();
+                txtTenTinhThanh.Clear();
+                txtTenTinhThanh.Enabled = true;
+                txtTenTinhThanh.Focus();
+                btnTimKiemTT.Text = "Search";
+            }
+            else
+            {
+                GvTinhThanh.DataSource = tinhthanh.search_TenTT(txtTenTinhThanh.Text);
+                btnTimKiemTT.Text = "Clear";
+            }
+        }
+
+        private void btnShowTT_Click(object sender, EventArgs e)
+        {
+            FormTinhThanh_QuanHuyen_Load(sender, e);
+        }
+
+        private void GVQuanHuyen_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVQuanHuyen.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVQuanHuyen.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
+        private void GvTinhThanh_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GvTinhThanh.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GvTinhThanh.Columns["STT_"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
+        private void btnXuatTT_Click(object sender, EventArgs e)
+        {
+            rptXuatPNH rpt = new rptXuatPNH();
+            rpt.SetDatabaseLogon("sa", "sa2012", "DESKTOP-COHHIDH", "QL_QTNPP_PEPSI");
+
+            FormXuatBaoCao fm = new FormXuatBaoCao();
+
+            fm.crystalReportViewer1.ReportSource = rpt;
+            fm.crystalReportViewer1.DisplayStatusBar = false;
+            fm.crystalReportViewer1.DisplayToolbar = true;
+
+            rpt.SetParameterValue("LocTinh", txtMaTinhThanh.Text.ToString());
+            fm.ShowDialog();
+
         }
     }
 }

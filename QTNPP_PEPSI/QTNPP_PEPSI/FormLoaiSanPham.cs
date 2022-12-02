@@ -35,12 +35,23 @@ namespace QTNPP_PEPSI
             cbbMaPAL.ValueMember = "MAPAL";
 
             //chỉ định dòng đầu vào textbox
-            txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[0].Value.ToString();
-            cbbMaPAL.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
-            txtTenLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[2].Value.ToString();
 
-            //không cho nhập dữ liệu vào combobox
-            this.cbbMaPAL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
+            GVLoaiSP.Columns[1].HeaderText = "Mã loại sản phẩm";
+            GVLoaiSP.Columns[1].Width = 150;
+
+            cbbMaPAL.Text = GVLoaiSP.CurrentRow.Cells[2].Value.ToString();
+            GVLoaiSP.Columns[2].HeaderText = "Mã pallet";
+            GVLoaiSP.Columns[2].Width = 150;
+
+            txtTenLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[3].Value.ToString();
+            GVLoaiSP.Columns[3].HeaderText = "Tên loại sản phẩm";
+            GVLoaiSP.Columns[3].Width = 200;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbMaPAL.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbMaPAL.AutoCompleteSource = AutoCompleteSource.ListItems;
+
 
             txtMaLoaiSP.Enabled = false;
             btnThem.Enabled = false;           
@@ -50,19 +61,22 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[0].Value.ToString();
-                cbbMaPAL.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
-                txtTenLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[2].Value.ToString();
+
+                txtMaLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[1].Value.ToString();
+                cbbMaPAL.Text = GVLoaiSP.CurrentRow.Cells[2].Value.ToString();
+                txtTenLoaiSP.Text = GVLoaiSP.CurrentRow.Cells[3].Value.ToString();
+
             }
             catch
             { }
         }
 
-        public string layMaTuDong_LoaiSP()
+
+        public void layMaTuDong_LoaiSP()
         {
             List<LOAISANPHAM> lst = new List<LOAISANPHAM>();
             lst = loaisp.getLoaiSP();
-            string a = GVLoaiSP.Rows[GVLoaiSP.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVLoaiSP.Rows[GVLoaiSP.Rows.Count - 1].Cells[1].Value.ToString();
             string malsp = "";
             malsp = "L";
             int ma = lst.Count;
@@ -76,7 +90,7 @@ namespace QTNPP_PEPSI
 
             malsp += ma.ToString();
 
-            return malsp;
+            txtMaLoaiSP.Text = malsp;
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -84,6 +98,7 @@ namespace QTNPP_PEPSI
             layMaTuDong_LoaiSP();
             btnThem.Enabled = true;
             txtTenLoaiSP.Clear();
+            txtTenLoaiSP.Enabled = true;
             cbbMaPAL.ResetText();
             txtTenLoaiSP.Focus();
         }
@@ -156,5 +171,37 @@ namespace QTNPP_PEPSI
             FormPAL formNew = new FormPAL();
             formNew.Show();
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                txtMaLoaiSP.Clear();
+                txtTenLoaiSP.Clear();
+                txtTenLoaiSP.Enabled = true;
+                txtTenLoaiSP.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVLoaiSP.DataSource = loaisp.search_TenLoaiSP(txtTenLoaiSP.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormLoaiSanPham_Load(sender, e);
+        }
+
+        private void GVLoaiSP_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVLoaiSP.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVLoaiSP.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
     }
 }

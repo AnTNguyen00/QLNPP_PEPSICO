@@ -67,6 +67,31 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Tìm kiếm bảng lương
+        public IQueryable search_TenNV(string ten)
+        {
+            return (from bl in QLNPP_PS.BANGLUONGs
+                    join nv in QLNPP_PS.NHANVIENs on bl.MANV equals nv.MANV
+                    join ctbl in QLNPP_PS.CHITIETBACLUONGs on nv.MANV equals ctbl.MANV
+                    join bac in QLNPP_PS.BACLUONGs on ctbl.MABAC equals bac.MABAC
+                    where nv.HOTENNV.Contains(ten)
+                    select new
+                    {
+                        bl.MABANGLUONG,
+                        bl.MANV,
+                        nv.HOTENNV,
+                        nv.MUCLUONGCOBAN,
+                        nv.NGAYBATDAULAMVIEC,
+                        nv.NGAYKETTHUCLAMVIEC,
+                        bac.HESO,
+                        bl.NGAYAPDUNG,
+                        bl.LUONGTHUCTE,
+                        bl.GHICHUBL
+                    });
+        }
+
+        #endregion
+
         #region Thêm xóa sửa bảng lương
 
         public int insert_BangLuong(string maBL, string maNV, decimal luongTT, DateTime ngayApDung, string ghiChu)

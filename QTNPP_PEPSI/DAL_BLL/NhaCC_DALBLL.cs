@@ -25,6 +25,25 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm nhà cung cấp
+        public IQueryable search_TenNCC(string ten)
+        {
+            return (from ncc in QLNPP_PS.NHACUNGCAPs.Where(p => p.TENNHACUNGCAP.Contains(ten))
+                    select new
+                    {
+                        ncc.MANCC,
+                        ncc.MAQUANHUYEN,
+                        ncc.TENNHACUNGCAP,
+                        ncc.DIACHI,
+                        ncc.SDT
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu nhà cung cấp theo hóa đơn nhập
         public IQueryable load_TenNCC()
         {

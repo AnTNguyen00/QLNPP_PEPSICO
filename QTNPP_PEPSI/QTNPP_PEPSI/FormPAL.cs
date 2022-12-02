@@ -29,8 +29,15 @@ namespace QTNPP_PEPSI
             }
 
             GVPAL.DataSource = pal.load_PAL();
-            txtMaPAL.Text = GVPAL.CurrentRow.Cells[0].Value.ToString();
-            txtTenPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
+
+            txtMaPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
+            GVPAL.Columns[1].HeaderText = "Mã Pallet";
+            GVPAL.Columns[1].Width = 180;
+
+            txtTenPAL.Text = GVPAL.CurrentRow.Cells[2].Value.ToString();
+            GVPAL.Columns[2].HeaderText = "Tên Pallet";
+            GVPAL.Columns[2].Width = 280;
+
 
             btnThem.Enabled = false;
             txtMaPAL.Enabled = false;
@@ -40,18 +47,21 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaPAL.Text = GVPAL.CurrentRow.Cells[0].Value.ToString();
-                txtTenPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
+
+                txtMaPAL.Text = GVPAL.CurrentRow.Cells[1].Value.ToString();
+                txtTenPAL.Text = GVPAL.CurrentRow.Cells[2].Value.ToString();
+
             }
             catch
             { }
         }
 
-        public string layMaTuDong_PAL()
+
+        public void layMaTuDong_PAL()
         {
             List<PAL> lst = new List<PAL>();
             lst = pal.getPAL();
-            string a = GVPAL.Rows[GVPAL.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVPAL.Rows[GVPAL.Rows.Count - 1].Cells[1].Value.ToString();
             string mapal = "";
             mapal = "PAL";
             int ma = lst.Count;
@@ -62,7 +72,7 @@ namespace QTNPP_PEPSI
                 mapal = mapal + "0";
             mapal += ma.ToString();
 
-            return mapal;
+            txtMaPAL.Text = mapal;
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -133,6 +143,37 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(btnTimKiem.Text == "Clear")
+            {
+                txtMaPAL.Clear();
+                txtTenPAL.Clear();
+                txtTenPAL.Enabled = true;
+                txtTenPAL.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVPAL.DataSource = pal.search_TenPAL(txtTenPAL.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormPAL_Load(sender, e);
+        }
+
+        private void GVPAL_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVPAL.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVPAL.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
         }
     }
 }

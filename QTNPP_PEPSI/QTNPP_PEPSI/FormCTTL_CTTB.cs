@@ -36,11 +36,12 @@ namespace QTNPP_PEPSI
             this.Close();
         }
 
-        public string layMaTuDong_TBTL()
+
+        public void layMaTuDong_TBTL()
         {
             List<CTTB_CTTL> lst = new List<CTTB_CTTL>();
             lst = TBTL.getTBTL();
-            string a = GVCTTB.Rows[GVCTTB.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVCTTB.Rows[GVCTTB.Rows.Count - 1].Cells[1].Value.ToString();
             string matbtl = "CT";
             string b = a.Substring(2, 2);
             int ma = Convert.ToInt32(b);
@@ -51,7 +52,7 @@ namespace QTNPP_PEPSI
                 matbtl = matbtl + "";
             matbtl += ma;
 
-            return matbtl;
+            txtMaCT.Text = matbtl;
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -102,8 +103,43 @@ namespace QTNPP_PEPSI
             cbbMaSP.DisplayMember = "TENSANPHAM";
             cbbMaSP.ValueMember = "MASP";
 
-            //không cho nhập dữ liệu vào combobox
-            this.cbbMaSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            txtMaCT.Text = GVCTTB.CurrentRow.Cells[1].Value.ToString();
+            GVCTTB.Columns[1].HeaderText = "Mã chương trình";
+            GVCTTB.Columns[1].Width = 110;
+
+            txtTenCT.Text = GVCTTB.CurrentRow.Cells[2].Value.ToString();
+            GVCTTB.Columns[2].HeaderText = "Tên chương trình";
+            GVCTTB.Columns[2].Width = 200;
+
+            integerInput_SoSuat.Text = GVCTTB.CurrentRow.Cells[3].Value.ToString();
+            GVCTTB.Columns[3].HeaderText = "Số suất";
+            GVCTTB.Columns[3].Width = 70;
+
+            cbbMaSP.Text = GVCTTB.CurrentRow.Cells[4].Value.ToString();
+            GVCTTB.Columns[4].HeaderText = "Mã sản phẩm";
+            GVCTTB.Columns[4].Width = 100;
+
+            DTPNgayBD.Text = GVCTTB.CurrentRow.Cells[5].Value.ToString();
+            GVCTTB.Columns[5].HeaderText = "Ngày bắt đầu";
+            GVCTTB.Columns[5].Width = 100;
+
+            DTPNgayKT.Text = GVCTTB.CurrentRow.Cells[6].Value.ToString();
+            GVCTTB.Columns[6].HeaderText = "Ngày kết thúc";
+            GVCTTB.Columns[6].Width = 100;
+
+            txtDiemDat.Text = GVCTTB.CurrentRow.Cells[7].Value.ToString();
+            GVCTTB.Columns[7].HeaderText = "Điểm đạt";
+            GVCTTB.Columns[7].Width = 80;
+
+            txtHinhAnh.Text = GVCTTB.CurrentRow.Cells[8].Value.ToString();
+            GVCTTB.Columns[8].HeaderText = "Hình Ảnh";
+            GVCTTB.Columns[8].Width = 100;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbMaSP.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbMaSP.AutoCompleteSource = AutoCompleteSource.ListItems;
+
 
             txtTenCT.Enabled = true;
         }
@@ -112,14 +148,14 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaCT.Text = GVCTTB.CurrentRow.Cells[0].Value.ToString();
-                txtTenCT.Text = GVCTTB.CurrentRow.Cells[1].Value.ToString();
-                integerInput_SoSuat.Text = GVCTTB.CurrentRow.Cells[2].Value.ToString();
-                cbbMaSP.Text = GVCTTB.CurrentRow.Cells[3].Value.ToString();
-                DTPNgayBD.Text = GVCTTB.CurrentRow.Cells[4].Value.ToString();
-                DTPNgayKT.Text = GVCTTB.CurrentRow.Cells[5].Value.ToString();
-                txtDiemDat.Text = GVCTTB.CurrentRow.Cells[6].Value.ToString();
-                txtHinhAnh.Text= GVCTTB.CurrentRow.Cells[7].Value.ToString();
+                txtMaCT.Text = GVCTTB.CurrentRow.Cells[1].Value.ToString();
+                txtTenCT.Text = GVCTTB.CurrentRow.Cells[2].Value.ToString();
+                integerInput_SoSuat.Text = GVCTTB.CurrentRow.Cells[3].Value.ToString();
+                cbbMaSP.Text = GVCTTB.CurrentRow.Cells[4].Value.ToString();
+                DTPNgayBD.Text = GVCTTB.CurrentRow.Cells[5].Value.ToString();
+                DTPNgayKT.Text = GVCTTB.CurrentRow.Cells[6].Value.ToString();
+                txtDiemDat.Text = GVCTTB.CurrentRow.Cells[7].Value.ToString();
+                txtHinhAnh.Text= GVCTTB.CurrentRow.Cells[8].Value.ToString();
 
                 Bitmap anh = new Bitmap(@"C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\hinhnew\1080-x-540-go-v-central-retail.jpg");
 
@@ -176,6 +212,48 @@ namespace QTNPP_PEPSI
             {
                 e.Handled = true;
             }
+        }
+
+
+        public void clear()
+        {
+            txtMaCT.Clear();
+            cbbMaSP.ResetText();
+            txtTenCT.Clear();
+            integerInput_SoSuat.ResetText();
+            DTPNgayBD.ResetText();
+            DTPNgayKT.ResetText();
+            txtDiemDat.Clear();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                clear();
+                txtTenCT.Enabled = true;
+                txtTenCT.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVCTTB.DataSource = TBTL.search_TenCT(txtTenCT.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormCTTL_CTTB_Load(sender, e);
+        }
+
+        private void GVCTTB_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVCTTB.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVCTTB.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
         }
     }
 }

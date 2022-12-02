@@ -35,14 +35,29 @@ namespace QTNPP_PEPSI
             cbbQuanHuyen.ValueMember = "MAQUANHUYEN";
 
             //chỉ định dòng đầu vào textbox
-            txtMaNCC.Text = GVNhaCC.CurrentRow.Cells[0].Value.ToString();
-            cbbQuanHuyen.Text = GVNhaCC.CurrentRow.Cells[1].Value.ToString();
-            txtTenNCC.Text = GVNhaCC.CurrentRow.Cells[2].Value.ToString();
-            txtDiaChi.Text = GVNhaCC.CurrentRow.Cells[3].Value.ToString();
-            txtSDT.Text = GVNhaCC.CurrentRow.Cells[4].Value.ToString();
+            txtMaNCC.Text = GVNhaCC.CurrentRow.Cells[1].Value.ToString();
+            GVNhaCC.Columns[1].HeaderText = "Mã nhà cung cấp";
+            GVNhaCC.Columns[1].Width = 120;
 
-            //không cho nhập dữ liệu vào combobox
-            this.cbbQuanHuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbbQuanHuyen.Text = GVNhaCC.CurrentRow.Cells[2].Value.ToString();
+            GVNhaCC.Columns[2].HeaderText = "Mã quận huyện";
+            GVNhaCC.Columns[2].Width = 120;
+
+            txtTenNCC.Text = GVNhaCC.CurrentRow.Cells[3].Value.ToString();
+            GVNhaCC.Columns[3].HeaderText = "Tên nhà cung cấp";
+            GVNhaCC.Columns[3].Width = 270;
+
+            txtDiaChi.Text = GVNhaCC.CurrentRow.Cells[4].Value.ToString();
+            GVNhaCC.Columns[4].HeaderText = "Địa chỉ";
+            GVNhaCC.Columns[4].Width = 150;
+
+            txtSDT.Text = GVNhaCC.CurrentRow.Cells[5].Value.ToString();
+            GVNhaCC.Columns[5].HeaderText = "Số điện thoại";
+            GVNhaCC.Columns[5].Width = 100;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbQuanHuyen.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbQuanHuyen.AutoCompleteSource = AutoCompleteSource.ListItems;
 
             btnThem.Enabled = false;
             txtMaNCC.Enabled = false;
@@ -52,11 +67,13 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaNCC.Text = GVNhaCC.CurrentRow.Cells[0].Value.ToString();
-                cbbQuanHuyen.Text = GVNhaCC.CurrentRow.Cells[1].Value.ToString();
-                txtTenNCC.Text = GVNhaCC.CurrentRow.Cells[2].Value.ToString();
-                txtDiaChi.Text = GVNhaCC.CurrentRow.Cells[3].Value.ToString();
-                txtSDT.Text = GVNhaCC.CurrentRow.Cells[4].Value.ToString();
+
+                txtMaNCC.Text = GVNhaCC.CurrentRow.Cells[1].Value.ToString();
+                cbbQuanHuyen.Text = GVNhaCC.CurrentRow.Cells[2].Value.ToString();
+                txtTenNCC.Text = GVNhaCC.CurrentRow.Cells[3].Value.ToString();
+                txtDiaChi.Text = GVNhaCC.CurrentRow.Cells[4].Value.ToString();
+                txtSDT.Text = GVNhaCC.CurrentRow.Cells[5].Value.ToString();
+
             }
             catch
             { }
@@ -71,23 +88,25 @@ namespace QTNPP_PEPSI
             txtSDT.Clear();
         }
 
-        public string layMaTuDong_NCC()
+
+        public void layMaTuDong_NCC()
         {
             List<NHACUNGCAP> lst = new List<NHACUNGCAP>();
             lst = nhacc.getNhaCC();
-            string a = GVNhaCC.Rows[GVNhaCC.Rows.Count - 1].Cells[0].Value.ToString();
-            string malsp = "";
-            malsp = "NCC";
+            string a = GVNhaCC.Rows[GVNhaCC.Rows.Count - 1].Cells[1].Value.ToString();
+            string mancc = "";
+            mancc = "NCC";
             int ma = lst.Count;
             ma = ma + 1;
             if (lst.Count <= 9)
-                malsp = malsp + "0";
+                mancc = mancc + "0";
             else
-                malsp = malsp + "";
+                mancc = mancc + "";
 
-            malsp += ma.ToString();
+            mancc += ma.ToString();
 
-            return malsp;
+            txtMaNCC.Text = mancc;
+
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -96,6 +115,9 @@ namespace QTNPP_PEPSI
             btnThem.Enabled = true;
             cbbQuanHuyen.ResetText();
             txtTenNCC.Clear();
+
+            txtTenNCC.Enabled = true;
+
             txtDiaChi.Clear();
             txtSDT.Clear();
             txtTenNCC.Focus();
@@ -176,5 +198,37 @@ namespace QTNPP_PEPSI
                 e.Handled = true;
             }
         }
+
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                clear();
+                txtTenNCC.Enabled = true;
+                txtTenNCC.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVNhaCC.DataSource = nhacc.search_TenNCC(txtTenNCC.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormNhaCC_Load(sender, e);
+        }
+
+        private void GVNhaCC_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVNhaCC.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVNhaCC.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
     }
 }

@@ -34,6 +34,25 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Tìm kiếm khách hàng
+        public IQueryable search_TenKH(string ten)
+        {
+            return (from k in QLNPP_PS.KHACHHANGs.Where(p => p.HOTENKH.Contains(ten))
+                    select new
+                    {
+                        k.MAKH,
+                        k.MAQUANHUYEN,
+                        k.HOTENKH,
+                        k.LOAIKHACHHANG,
+                        k.NGAYSINHKH,
+                        k.GIOITINHKH,
+                        k.DIACHIKH,
+                        k.SODIENTHOAIKH
+                    });
+        }
+
+        #endregion
+
         #region Load dữ liệu khách hàng theo đăng ký CTTB - CTTL
 
         public IQueryable load_TenKH()

@@ -72,14 +72,35 @@ namespace QTNPP_PEPSI
             cbMaCT.DisplayMember = "TENCT";
             cbMaCT.ValueMember = "MACT";
 
-            cbMaCT.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[0].Value.ToString();
-            cbbMaKH.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();   
-            DTPNgayDK.Value = Convert.ToDateTime(GV_DK_CTTB.CurrentRow.Cells[2].Value.ToString());
-            txtDiemTL.Text = GV_DK_CTTB.CurrentRow.Cells[3].Value.ToString();
+
+            cbMaCT.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();
+            GV_DK_CTTB.Columns[1].HeaderText = "Mã chương trình";
+            GV_DK_CTTB.Columns[1].Width = 110;
+
+            cbbMaKH.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[2].Value.ToString();
+            GV_DK_CTTB.Columns[2].HeaderText = "Mã khách hàng";
+            GV_DK_CTTB.Columns[2].Width = 110;
+
+            DTPNgayDK.Value = Convert.ToDateTime(GV_DK_CTTB.CurrentRow.Cells[3].Value.ToString());
+            GV_DK_CTTB.Columns[3].HeaderText = "Ngày đăng ký";
+            GV_DK_CTTB.Columns[3].Width = 100;
+
+            txtDiemTL.Text = GV_DK_CTTB.CurrentRow.Cells[4].Value.ToString();
+            GV_DK_CTTB.Columns[4].HeaderText = "Điểm tích lũy";
+            GV_DK_CTTB.Columns[4].Width = 90;
+
+            GV_DK_CTTB.Columns[5].HeaderText = "Trạng thái";
+            GV_DK_CTTB.Columns[5].Width = 90;
 
             //không cho nhập dữ liệu vào combobox
             this.cbMaCT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbMaKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbMaKH.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbMaKH.AutoCompleteSource = AutoCompleteSource.ListItems;
+
+
+            txtDiemTL.Enabled = true;
         }
 
         #region Load trạng thái theo dk TBTL
@@ -165,12 +186,12 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                string ct = GV_DK_CTTB.CurrentRow.Cells[0].Value.ToString();
+                string ct = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();
 
-                cbMaCT.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[0].Value.ToString();
-                cbbMaKH.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();
-                DTPNgayDK.Value = Convert.ToDateTime(GV_DK_CTTB.CurrentRow.Cells[2].Value.ToString());
-                txtDiemTL.Text = GV_DK_CTTB.CurrentRow.Cells[3].Value.ToString();
+                cbMaCT.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[1].Value.ToString();
+                cbbMaKH.SelectedValue = GV_DK_CTTB.CurrentRow.Cells[2].Value.ToString();
+                DTPNgayDK.Value = Convert.ToDateTime(GV_DK_CTTB.CurrentRow.Cells[3].Value.ToString());
+                txtDiemTL.Text = GV_DK_CTTB.CurrentRow.Cells[4].Value.ToString();
 
                 checkTrangThai(ct);
             }
@@ -181,6 +202,23 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void clear()
+        {
+            cbMaCT.ResetText();
+            cbbMaKH.ResetText();
+            DTPNgayDK.ResetText();
+            txtDiemTL.Clear();
+        }
+
+        private void GV_DK_CTTB_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GV_DK_CTTB.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GV_DK_CTTB.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
         }
     }
 }

@@ -18,6 +18,22 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm tỉnh thành
+        public IQueryable search_TenTT(string ten)
+        {
+            return (from tt in QLNPP_PS.TINHTHANHs.Where(p => p.TENTINHTHANH.Contains(ten))
+                    select new
+                    {
+                        tt.MATINHTHANH,
+                        tt.TENTINHTHANH
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Thêm xóa tỉnh thành
 
         public bool them_TinhThanh(string maTT, string tenTT)

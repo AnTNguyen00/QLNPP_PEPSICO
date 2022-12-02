@@ -31,6 +31,34 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm quận huyện theo tỉnh
+        public IQueryable search_TenQH(string tenqh, string matinh)
+        {
+            return (from qh in QLNPP_PS.QUANHUYENs.Where(p => p.TENQUANHUYEN.Contains(tenqh) && p.MATINHTHANH.Contains(matinh))
+                    select new
+                    {
+                        qh.MAQUANHUYEN,
+                        qh.MATINHTHANH,
+                        qh.TENQUANHUYEN
+                    });
+        }
+
+        public IQueryable search_MATT(string matinh)
+        {
+            return (from qh in QLNPP_PS.QUANHUYENs.Where(p => p.TENQUANHUYEN.Contains(matinh))
+                    select new
+                    {
+                        qh.MAQUANHUYEN,
+                        qh.MATINHTHANH,
+                        qh.TENQUANHUYEN
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu quận huyện theo khách hàng
         public IQueryable load_TenQuanHuyen()
         {

@@ -308,6 +308,8 @@ namespace QTNPP_PEPSI
                     item.Visible = false;
                 }
             }
+
+            
         }
 
         private void buttonItem44_Click(object sender, EventArgs e)

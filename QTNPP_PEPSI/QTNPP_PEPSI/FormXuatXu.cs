@@ -29,9 +29,17 @@ namespace QTNPP_PEPSI
             GVXuatXu.DataSource = xuatxu.load_XuatXu();
 
             //chỉ định dòng đầu vào textbox
-            txtMaXuatXu.Text = GVXuatXu.CurrentRow.Cells[0].Value.ToString();
-            txtTenXuatXu.Text = GVXuatXu.CurrentRow.Cells[1].Value.ToString();
-            txtLoaiXuatXu.Text = GVXuatXu.CurrentRow.Cells[2].Value.ToString();
+            txtMaXuatXu.Text = GVXuatXu.CurrentRow.Cells[1].Value.ToString();
+            GVXuatXu.Columns[1].HeaderText = "Mã xuất xứ";
+            GVXuatXu.Columns[1].Width = 150;
+
+            txtTenXuatXu.Text = GVXuatXu.CurrentRow.Cells[2].Value.ToString();
+            GVXuatXu.Columns[2].HeaderText = "Tên xuất xứ";
+            GVXuatXu.Columns[2].Width = 150;
+
+            txtLoaiXuatXu.Text = GVXuatXu.CurrentRow.Cells[3].Value.ToString();
+            GVXuatXu.Columns[3].HeaderText = "Loại xuất xứ";
+            GVXuatXu.Columns[3].Width = 150;
 
             btnThem.Enabled = false;
             txtMaXuatXu.Enabled = false;
@@ -41,19 +49,22 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaXuatXu.Text = GVXuatXu.CurrentRow.Cells[0].Value.ToString();
-                txtTenXuatXu.Text = GVXuatXu.CurrentRow.Cells[1].Value.ToString();
-                txtLoaiXuatXu.Text = GVXuatXu.CurrentRow.Cells[2].Value.ToString();
+
+                txtMaXuatXu.Text = GVXuatXu.CurrentRow.Cells[1].Value.ToString();
+                txtTenXuatXu.Text = GVXuatXu.CurrentRow.Cells[2].Value.ToString();
+                txtLoaiXuatXu.Text = GVXuatXu.CurrentRow.Cells[3].Value.ToString();
+
             }
             catch
             { }
         }
 
-        public string LayMaTuDong_XX()
+
+        public void LayMaTuDong_XX()
         {
             List<XUATXU> lst = new List<XUATXU>();
             lst = xuatxu.getXuatXu();
-            string a = GVXuatXu.Rows[GVXuatXu.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVXuatXu.Rows[GVXuatXu.Rows.Count - 1].Cells[1].Value.ToString();
             string maxx = "";
             maxx = "XX";
             int ma = lst.Count;
@@ -65,7 +76,7 @@ namespace QTNPP_PEPSI
 
             maxx += ma.ToString();
 
-            return maxx;
+            txtMaXuatXu.Text = maxx;
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -156,6 +167,38 @@ namespace QTNPP_PEPSI
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                txtMaXuatXu.Clear();
+                txtTenXuatXu.Clear();
+                txtLoaiXuatXu.Clear();
+                txtTenXuatXu.Enabled = true;
+                txtTenXuatXu.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVXuatXu.DataSource = xuatxu.search_TenXX(txtTenXuatXu.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormXuatXu_Load(sender, e);
+        }
+
+        private void GVXuatXu_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVXuatXu.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVXuatXu.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
         }
     }
 }

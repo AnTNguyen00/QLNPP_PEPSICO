@@ -27,10 +27,30 @@ namespace QTNPP_PEPSI
             if (FormDangNhap.nv.MANHOMNV == "NV")
             {
                 GvChamCong.DataSource = chamcong.load_ChamCongNV(FormDangNhap.nv.MANV);
-                txtMaChamCong.Text = GvChamCong.Rows[GvChamCong.Rows.Count - 1].Cells[0].Value.ToString();
+
                 txtMaChamCong.Focus();
                 panelEx1.Visible = false;
                 panelEx2.Visible = false;
+
+                txtMaChamCong.Text = GvChamCong.Rows[GvChamCong.Rows.Count - 1].Cells[1].Value.ToString();
+                GvChamCong.Columns[1].HeaderText = "Mã chấm công";
+                GvChamCong.Columns[1].Width = 150;
+
+                cbbMaNhanVien.Text = GvChamCong.CurrentRow.Cells[2].Value.ToString();
+                GvChamCong.Columns[2].HeaderText = "Mã nhân viên";
+                GvChamCong.Columns[2].Width = 150;
+
+                txtThang.Text = GvChamCong.CurrentRow.Cells[3].Value.ToString();
+                GvChamCong.Columns[3].HeaderText = "Tháng";
+                GvChamCong.Columns[3].Width = 150;
+
+                txtNam.Text = GvChamCong.CurrentRow.Cells[4].Value.ToString();
+                GvChamCong.Columns[4].HeaderText = "Năm";
+                GvChamCong.Columns[4].Width = 150;
+
+                txtSoNgayLam.Text = GvChamCong.CurrentRow.Cells[5].Value.ToString();
+                GvChamCong.Columns[5].HeaderText = "Số ngày làm";
+                GvChamCong.Columns[5].Width = 150;
             }
             else
             {
@@ -38,24 +58,53 @@ namespace QTNPP_PEPSI
                 cbbMaNhanVien.DataSource = nv.load_TenNV();
                 cbbMaNhanVien.ValueMember = "MANV";
                 cbbMaNhanVien.DisplayMember = "HOTENNV";
+
+
+                cbbMaNhanVien.Text = GvChamCong.CurrentRow.Cells[1].Value.ToString();
+                GvChamCong.Columns[1].HeaderText = "Mã nhân viên";
+                GvChamCong.Columns[1].Width = 150;
+
+                txtMaCC2.Text = GvChamCong.CurrentRow.Cells[2].Value.ToString();
+                GvChamCong.Columns[2].HeaderText = "Mã chấm công";
+                GvChamCong.Columns[2].Width = 150;
+
+                GvChamCong.CurrentRow.Cells[3].Value.ToString();
+                GvChamCong.Columns[3].HeaderText = "Tên nhân viên";
+                GvChamCong.Columns[3].Width = 150;
+
+                txtThang.Text = GvChamCong.CurrentRow.Cells[4].Value.ToString();
+                GvChamCong.Columns[4].HeaderText = "Tháng";
+                GvChamCong.Columns[4].Width = 150;
+
+                txtNam.Text = GvChamCong.CurrentRow.Cells[5].Value.ToString();
+                GvChamCong.Columns[5].HeaderText = "Năm";
+                GvChamCong.Columns[5].Width = 150;
+
+                txtSoNgayLam.Text = GvChamCong.CurrentRow.Cells[6].Value.ToString();
+                GvChamCong.Columns[6].HeaderText = "Số ngày làm";
+                GvChamCong.Columns[6].Width = 150;
             }
 
-            //không cho nhập dữ liệu vào combobox
-            this.cbbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbMaNhanVien.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbMaNhanVien.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void GvChamCong_Click(object sender, EventArgs e)
         {
             try
             {
-                cbbMaNhanVien.Text = GvChamCong.CurrentRow.Cells[0].Value.ToString();
-                txtMaCC2.Text = GvChamCong.CurrentRow.Cells[1].Value.ToString();
-                txtThang.Text = GvChamCong.CurrentRow.Cells[3].Value.ToString();
-                txtNam.Text = GvChamCong.CurrentRow.Cells[4].Value.ToString();
-                txtSoNgayLam.Text = GvChamCong.CurrentRow.Cells[5].Value.ToString();
+                cbbMaNhanVien.Text = GvChamCong.CurrentRow.Cells[1].Value.ToString();
+                txtMaCC2.Text = GvChamCong.CurrentRow.Cells[2].Value.ToString();
+                txtThang.Text = GvChamCong.CurrentRow.Cells[4].Value.ToString();
+                txtNam.Text = GvChamCong.CurrentRow.Cells[5].Value.ToString();
+                txtSoNgayLam.Text = GvChamCong.CurrentRow.Cells[6].Value.ToString();
             }
             catch { }
         }
+
+        
 
         private void btnChamCong_Click(object sender, EventArgs e)
         {
@@ -177,5 +226,6 @@ namespace QTNPP_PEPSI
                 e.Handled = true;
             }
         }
+
     }
 }

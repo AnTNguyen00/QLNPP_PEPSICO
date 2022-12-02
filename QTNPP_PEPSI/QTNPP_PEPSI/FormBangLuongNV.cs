@@ -32,15 +32,32 @@ namespace QTNPP_PEPSI
             cbbMaNhanVien.ValueMember = "MANV";
 
             //chỉ định dòng đầu vào textbox
-            cbbMaLuong.Text = GVBangLuong.CurrentRow.Cells[0].Value.ToString();
-            cbbMaNhanVien.Text = GVBangLuong.CurrentRow.Cells[1].Value.ToString();
-            txtLuongThucTe.Text = GVBangLuong.CurrentRow.Cells[2].Value.ToString();
-            DTPNgayApDung.Text = GVBangLuong.CurrentRow.Cells[3].Value.ToString();
-            txtGhiChu.Text = GVBangLuong.CurrentRow.Cells[4].Value.ToString();
+            cbbMaLuong.Text = GVBangLuong.CurrentRow.Cells[1].Value.ToString();
+            GVBangLuong.Columns[1].HeaderText = "Mã bảng lương";
+            GVBangLuong.Columns[1].Width = 110;
+
+            cbbMaNhanVien.Text = GVBangLuong.CurrentRow.Cells[2].Value.ToString();
+            GVBangLuong.Columns[2].HeaderText = "Mã nhân viên";
+            GVBangLuong.Columns[2].Width = 100;
+
+            txtLuongThucTe.Text = GVBangLuong.CurrentRow.Cells[3].Value.ToString();
+            GVBangLuong.Columns[3].HeaderText = "Lương thực tế";
+            GVBangLuong.Columns[3].Width = 110;
+
+            DTPNgayApDung.Text = GVBangLuong.CurrentRow.Cells[4].Value.ToString();
+            GVBangLuong.Columns[4].HeaderText = "Ngày áp dụng";
+            GVBangLuong.Columns[4].Width = 100;
+
+            txtGhiChu.Text = GVBangLuong.CurrentRow.Cells[5].Value.ToString();
+            GVBangLuong.Columns[5].HeaderText = "Ghi chú";
+            GVBangLuong.Columns[5].Width = 100;
 
             //không cho nhập dữ liệu vào combobox
             this.cbbMaLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbMaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            //Tìm kiếm (ký tự sẽ xổ ra khi gõ vào ký tự gần giống)
+            cbbMaNhanVien.AutoCompleteMode = AutoCompleteMode.Suggest;
+            cbbMaNhanVien.AutoCompleteSource = AutoCompleteSource.ListItems;
 
             btnThem.Enabled = false;
             loadcbbbl();
@@ -58,11 +75,11 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                cbbMaLuong.Text = GVBangLuong.CurrentRow.Cells[0].Value.ToString();
-                cbbMaNhanVien.Text = GVBangLuong.CurrentRow.Cells[1].Value.ToString();
-                txtLuongThucTe.Text = GVBangLuong.CurrentRow.Cells[2].Value.ToString();
-                DTPNgayApDung.Text = GVBangLuong.CurrentRow.Cells[3].Value.ToString();
-                txtGhiChu.Text = GVBangLuong.CurrentRow.Cells[4].Value.ToString();
+                cbbMaLuong.Text = GVBangLuong.CurrentRow.Cells[1].Value.ToString();
+                cbbMaNhanVien.Text = GVBangLuong.CurrentRow.Cells[2].Value.ToString();
+                txtLuongThucTe.Text = GVBangLuong.CurrentRow.Cells[3].Value.ToString();
+                DTPNgayApDung.Text = GVBangLuong.CurrentRow.Cells[4].Value.ToString();
+                txtGhiChu.Text = GVBangLuong.CurrentRow.Cells[5].Value.ToString();
             }
             catch
             { }
@@ -235,5 +252,36 @@ namespace QTNPP_PEPSI
                 e.Handled = true;
             }
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                clear();
+                txtHoTenNhanVien.Enabled = true;
+                txtHoTenNhanVien.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVBangLuong.DataSource = bangluong.search_TenNV(txtHoTenNhanVien.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormBangLuongNV_Load(sender, e);
+        }
+
+        private void GVBangLuong_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVBangLuong.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVBangLuong.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
     }
 }

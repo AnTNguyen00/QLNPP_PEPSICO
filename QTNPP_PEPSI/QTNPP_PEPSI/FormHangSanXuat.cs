@@ -29,8 +29,14 @@ namespace QTNPP_PEPSI
             GVHangSX.DataSource = hangsx.load_HangSX();
 
             //chỉ định dòng đầu vào textbox
-            txtMaHangSX.Text = GVHangSX.CurrentRow.Cells[0].Value.ToString();
-            txtTenHangSX.Text = GVHangSX.CurrentRow.Cells[1].Value.ToString();
+            txtMaHangSX.Text = GVHangSX.CurrentRow.Cells[1].Value.ToString();
+            GVHangSX.Columns[1].HeaderText = "Mã hãng sản xuất";
+            GVHangSX.Columns[1].Width = 150;
+
+            txtTenHangSX.Text = GVHangSX.CurrentRow.Cells[2].Value.ToString();
+            GVHangSX.Columns[2].HeaderText = "Tên hãng sản xuất";
+            GVHangSX.Columns[2].Width = 250;
+
 
             btnThem.Enabled = false;
             txtMaHangSX.Enabled = false;
@@ -40,18 +46,19 @@ namespace QTNPP_PEPSI
         {
             try
             {
-                txtMaHangSX.Text = GVHangSX.CurrentRow.Cells[0].Value.ToString();
-                txtTenHangSX.Text = GVHangSX.CurrentRow.Cells[1].Value.ToString();
+                txtMaHangSX.Text = GVHangSX.CurrentRow.Cells[1].Value.ToString();
+                txtTenHangSX.Text = GVHangSX.CurrentRow.Cells[2].Value.ToString();
             }
             catch
             { }
         }
 
-        public string layMaTuDong_HSX()
+
+        public void layMaTuDong_HSX()
         {
             List<HANGSANXUAT> lst = new List<HANGSANXUAT>();
             lst = hangsx.getHangSX();
-            string a = GVHangSX.Rows[GVHangSX.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVHangSX.Rows[GVHangSX.Rows.Count - 1].Cells[1].Value.ToString();
             string mahsx = "";
             mahsx = "HSX";
             int ma = lst.Count;
@@ -63,7 +70,7 @@ namespace QTNPP_PEPSI
 
             mahsx += ma.ToString();
 
-            return mahsx;
+            txtMaHangSX.Text = mahsx;
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
@@ -136,5 +143,38 @@ namespace QTNPP_PEPSI
         {
             this.Close();
         }
+
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                txtMaHangSX.Clear();
+                txtTenHangSX.Clear();
+                txtTenHangSX.Enabled = true;
+                txtTenHangSX.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVHangSX.DataSource = hangsx.search_TenHSX(txtTenHangSX.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormHangSanXuat_Load(sender, e);
+        }
+
+        private void GVHangSX_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVHangSX.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVHangSX.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+        }
+
     }
 }

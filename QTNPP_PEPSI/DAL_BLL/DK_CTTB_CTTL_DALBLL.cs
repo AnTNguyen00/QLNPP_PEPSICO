@@ -21,7 +21,6 @@ namespace DAL_BLL
                            dk_cttb_cttl.NGAYDK,
                            dk_cttb_cttl.DIEMTL_THUC,
                            dk_cttb_cttl.TRANGTHAI
-
                        };
             return dk_tbtl;
         }

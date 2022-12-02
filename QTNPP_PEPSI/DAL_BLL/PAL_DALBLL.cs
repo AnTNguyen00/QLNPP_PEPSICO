@@ -24,6 +24,22 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm PAL
+        public IQueryable search_TenPAL(string ten)
+        {
+            return (from pal in QLNPP_PS.PALs.Where(p => p.TENPAL.Contains(ten))
+                    select new
+                    {
+                        pal.MAPAL,
+                        pal.TENPAL
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu PAL theo loại sản phẩm
         public IQueryable load_MAPAL()
         {

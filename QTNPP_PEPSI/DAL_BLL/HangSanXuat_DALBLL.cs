@@ -24,6 +24,22 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm hãng sản xuất
+        public IQueryable search_TenHSX(string ten)
+        {
+            return (from hsx in QLNPP_PS.HANGSANXUATs.Where(p => p.TENHSX.Contains(ten))
+                    select new
+                    {
+                        hsx.MAHSX,
+                        hsx.TENHSX
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu hãng sản xuất theo sản phẩm
         public IQueryable load_TenHSX()
         {

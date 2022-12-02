@@ -34,3 +34,15 @@ C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\DTO\obj\Debug\DTO.csproj.Genera
 C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\DTO\obj\Debug\DTO.exe
 C:\Users\Admin\OneDrive\Desktop\KLTN\QTNPP_PEPSI\DTO\obj\Debug\DTO.pdb
+<<<<<<< HEAD
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\bin\Debug\DTO.exe.config
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\bin\Debug\DTO.exe
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\bin\Debug\DTO.pdb
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.exe
+C:\Users\Admin\OneDrive\Desktop\CV tuan\Tuan 7 27-11 den 4-12\Task M\QTNPP_PEPSI\DTO\obj\Debug\DTO.pdb
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82

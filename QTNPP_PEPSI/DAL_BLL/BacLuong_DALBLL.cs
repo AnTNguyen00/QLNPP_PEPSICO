@@ -17,12 +17,6 @@ namespace DAL_BLL
             return bacl;
         }
 
-        public IQueryable load_CTBacLuong()
-        {
-            var ctbac = from bacluong in QLNPP_PS.CHITIETBACLUONGs select new { bacluong.MABAC, bacluong.MANV, bacluong.TUNGAY, bacluong.DENNGAY };
-            return ctbac;
-        }
-
         public List<BACLUONG> getBacLuong()
         {
             return QLNPP_PS.BACLUONGs.Select(k => k).ToList<BACLUONG>();
@@ -30,13 +24,26 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Load dữ liệu CT bậc lương
+        public IQueryable load_CTBacLuong(string mabl)
+        {
+            return (from ctbl in QLNPP_PS.CHITIETBACLUONGs
+                    join nv in QLNPP_PS.NHANVIENs on ctbl.MANV equals nv.MANV
+                    where ctbl.MABAC == mabl
+                    select new { ctbl.MABAC, ctbl.MANV, ctbl.TUNGAY, ctbl.DENNGAY });
+        }
+
+        #endregion
+
         #region Thêm xóa sửa bậc lương
-        public int insert_Bac(string maBac, string tenBac, double heSo)
+        public int insert_Bac(string maBac, string tenBac, double heSo, string maNV, string tuNgay, string denNgay)
         {
             BACLUONG bac = new BACLUONG { MABAC = maBac, TENBAC = tenBac, HESO = heSo };
+            CHITIETBACLUONG ct = new CHITIETBACLUONG { MABAC = maBac, MANV = maNV, TUNGAY = Convert.ToDateTime(tuNgay), DENNGAY = Convert.ToDateTime(denNgay) };
             try
             {
                 QLNPP_PS.BACLUONGs.InsertOnSubmit(bac);
+                QLNPP_PS.CHITIETBACLUONGs.InsertOnSubmit(ct);
                 QLNPP_PS.SubmitChanges();
                 return 1;
             }
@@ -62,22 +69,6 @@ namespace DAL_BLL
             }
         }
 
-        public int update_Bac(string maBac, string tenBac, double heSo)
-        {
-            try
-            {
-                BACLUONG bac = QLNPP_PS.BACLUONGs.Where(t => t.MABAC == maBac).FirstOrDefault();
-                bac.TENBAC = tenBac;
-                bac.HESO = heSo;
-
-                QLNPP_PS.SubmitChanges();
-                return 1;
-            }
-            catch
-            {
-                return 0;
-            }
-        }
         #endregion
 
         #region Thêm xóa sửa CT bậc lương
@@ -94,6 +85,24 @@ namespace DAL_BLL
             catch
             {
                 return 0;
+            }
+        }
+
+        public bool insertQuanHuyen(string maQH, string maTT, string tenQH)
+        {
+            try
+            {
+                QUANHUYEN quanhuyen = new QUANHUYEN();
+                quanhuyen.MAQUANHUYEN = maQH;
+                quanhuyen.MATINHTHANH = maTT;
+                quanhuyen.TENQUANHUYEN = tenQH;
+                QLNPP_PS.QUANHUYENs.InsertOnSubmit(quanhuyen);
+                QLNPP_PS.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
 

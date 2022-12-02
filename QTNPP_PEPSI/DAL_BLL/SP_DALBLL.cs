@@ -49,6 +49,133 @@ namespace DAL_BLL
 
         #endregion
 
+<<<<<<< HEAD
+        #region Tìm kiếm sản phẩm
+        public IQueryable load_SP1()
+        {
+            var sp = from sanpham in QLNPP_PS.SANPHAMs
+                     select new
+                     {
+                         sanpham.MASP,
+                         sanpham.MALOAISANPHAM,
+                         sanpham.MAHSX,
+                         sanpham.MAXUATXU,
+                         sanpham.TENSANPHAM,
+                         sanpham.HINHSP,
+                         sanpham.THANHPHAN,
+                         sanpham.CONGDUNG,
+                         sanpham.BAOQUAN,
+                         sanpham.GHICHUSP,
+                         sanpham.DVT,
+                         sanpham.SOLOSP,
+                         sanpham.NGAYSANXUAT,
+                         sanpham.HANSUDUNG,
+                         sanpham.DONGIASP,
+                         sanpham.SOLUONGTON
+                     };
+            return sp;
+        }
+
+        public IQueryable search_MASP(string maSP)
+        {
+            return (from sp in QLNPP_PS.SANPHAMs.Where(p => p.MASP.Contains(maSP))
+                    select new
+                    {
+                        sp.MASP,
+                        sp.MALOAISANPHAM,
+                        sp.MAHSX,
+                        sp.MAXUATXU,
+                        sp.TENSANPHAM,
+                        sp.HINHSP,
+                        sp.THANHPHAN,
+                        sp.CONGDUNG,
+                        sp.BAOQUAN,
+                        sp.GHICHUSP,
+                        sp.DVT,
+                        sp.SOLOSP,
+                        sp.NGAYSANXUAT,
+                        sp.HANSUDUNG,
+                        sp.DONGIASP,
+                        sp.SOLUONGTON
+                    });
+        }
+
+        public IQueryable search_TenSP(string tenSP)
+        {
+            return (from sp in QLNPP_PS.SANPHAMs.Where(p => p.TENSANPHAM.Contains(tenSP))
+                    select new
+                    {
+                        sp.MASP,
+                        sp.MALOAISANPHAM,
+                        sp.MAHSX,
+                        sp.MAXUATXU,
+                        sp.TENSANPHAM,
+                        sp.HINHSP,
+                        sp.THANHPHAN,
+                        sp.CONGDUNG,
+                        sp.BAOQUAN,
+                        sp.GHICHUSP,
+                        sp.DVT,
+                        sp.SOLOSP,
+                        sp.NGAYSANXUAT,
+                        sp.HANSUDUNG,
+                        sp.DONGIASP,
+                        sp.SOLUONGTON
+                    });
+        }
+
+        public IQueryable search_CongDung(string congDung)
+        {
+            return (from sp in QLNPP_PS.SANPHAMs.Where(p => p.CONGDUNG.Contains(congDung))
+                    select new
+                    {
+                        sp.MASP,
+                        sp.MALOAISANPHAM,
+                        sp.MAHSX,
+                        sp.MAXUATXU,
+                        sp.TENSANPHAM,
+                        sp.HINHSP,
+                        sp.THANHPHAN,
+                        sp.CONGDUNG,
+                        sp.BAOQUAN,
+                        sp.GHICHUSP,
+                        sp.DVT,
+                        sp.SOLOSP,
+                        sp.NGAYSANXUAT,
+                        sp.HANSUDUNG,
+                        sp.DONGIASP,
+                        sp.SOLUONGTON
+                    });
+        }
+
+        public IQueryable search_NgaySX(DateTime ngaySX)
+        {
+            return (from sp in QLNPP_PS.SANPHAMs.Where(p => p.NGAYSANXUAT == ngaySX)
+                    select new
+                    {
+                        sp.MASP,
+                        sp.MALOAISANPHAM,
+                        sp.MAHSX,
+                        sp.MAXUATXU,
+                        sp.TENSANPHAM,
+                        sp.HINHSP,
+                        sp.THANHPHAN,
+                        sp.CONGDUNG,
+                        sp.BAOQUAN,
+                        sp.GHICHUSP,
+                        sp.DVT,
+                        sp.SOLOSP,
+                        sp.NGAYSANXUAT,
+                        sp.HANSUDUNG,
+                        sp.DONGIASP,
+                        sp.SOLUONGTON
+                    });
+        }
+
+        #endregion
+
+=======
+>>>>>>> 7910f3a321947f813de7cc2c0787c6420c553f82
         #region Load dữ liệu sản phẩm theo CTTB - CTTL
         public IQueryable load_TenSP()
         {
