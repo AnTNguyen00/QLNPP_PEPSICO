@@ -24,6 +24,19 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Tìm kiếm loại khách hàng
+        public IQueryable search_TenLoaiKH(string ten)
+        {
+            return (from lkh in QLNPP_PS.LOAIKHACHHANGs.Where(p => p.TENLOAIKH.Contains(ten))
+                    select new
+                    {
+                        lkh.LOAIKHACHHANG1,
+                        lkh.TENLOAIKH
+                    });
+        }
+
+        #endregion
+
         #region Load dữ liệu loại theo khách hàng
         public IQueryable load_TenLoaiKH()
         {

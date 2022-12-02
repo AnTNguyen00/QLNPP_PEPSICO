@@ -13,7 +13,7 @@ namespace QTNPP_PEPSI
 {
     public partial class FormRestore : Form
     {
-        SqlConnection con = new SqlConnection("Data Source = DESKTOP-NOHK2T0\\MYNGUYEN; Initial Catalog = QL_QTNPP_PEPSI; User ID = sa; Password = sa2012");
+        SqlConnection con = new SqlConnection("Data Source = DESKTOP-COHHIDH; Initial Catalog = QL_QTNPP_PEPSI; User ID = sa; Password = sa2012");
 
         public FormRestore()
         {

@@ -89,7 +89,7 @@ namespace QTNPP_PEPSI
             this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.btnSua = new DevComponents.DotNetBar.ButtonX();
             this.btnLapPX = new DevComponents.DotNetBar.ButtonX();
-            this.btnXoa = new DevComponents.DotNetBar.ButtonX();
+            this.btnXoaPX = new DevComponents.DotNetBar.ButtonX();
             this.btnThem = new DevComponents.DotNetBar.ButtonX();
             this.btnTaoMoi = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel5.SuspendLayout();
@@ -110,10 +110,9 @@ namespace QTNPP_PEPSI
             // 
             // groupPanel5
             // 
-            this.groupPanel5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupPanel5.BackColor = System.Drawing.Color.White;
             this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel5.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel5.Controls.Add(this.groupPanel6);
             this.groupPanel5.Controls.Add(this.groupPanel4);
             this.groupPanel5.Controls.Add(this.groupPanel1);
@@ -128,12 +127,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel5.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel5.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel5.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel5.Style.BackColorGradientAngle = 90;
+            this.groupPanel5.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel5.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel5.Style.BorderBottomWidth = 1;
-            this.groupPanel5.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel5.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel5.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel5.Style.BorderLeftWidth = 1;
             this.groupPanel5.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -143,7 +142,7 @@ namespace QTNPP_PEPSI
             this.groupPanel5.Style.CornerDiameter = 4;
             this.groupPanel5.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel5.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel5.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel5.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel5.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -160,7 +159,6 @@ namespace QTNPP_PEPSI
             // 
             this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel6.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel6.Controls.Add(this.panelEx5);
             this.groupPanel6.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel6.Location = new System.Drawing.Point(1186, 3);
@@ -169,12 +167,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel6.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel6.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel6.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel6.Style.BackColorGradientAngle = 90;
+            this.groupPanel6.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel6.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel6.Style.BorderBottomWidth = 1;
-            this.groupPanel6.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel6.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel6.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel6.Style.BorderLeftWidth = 1;
             this.groupPanel6.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -184,7 +182,7 @@ namespace QTNPP_PEPSI
             this.groupPanel6.Style.CornerDiameter = 4;
             this.groupPanel6.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel6.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel6.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -280,7 +278,6 @@ namespace QTNPP_PEPSI
             // 
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel4.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel4.Controls.Add(this.GvPhieuXuat);
             this.groupPanel4.Controls.Add(this.txtSearch);
             this.groupPanel4.Controls.Add(this.btnLoc);
@@ -291,12 +288,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel4.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel4.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel4.Style.BackColorGradientAngle = 90;
+            this.groupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel4.Style.BorderBottomWidth = 1;
-            this.groupPanel4.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel4.Style.BorderLeftWidth = 1;
             this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -306,7 +303,7 @@ namespace QTNPP_PEPSI
             this.groupPanel4.Style.CornerDiameter = 4;
             this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel4.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -355,6 +352,7 @@ namespace QTNPP_PEPSI
             this.GvPhieuXuat.RowTemplate.Height = 24;
             this.GvPhieuXuat.Size = new System.Drawing.Size(374, 672);
             this.GvPhieuXuat.TabIndex = 5;
+            this.GvPhieuXuat.Click += new System.EventHandler(this.GvPhieuXuat_Click);
             // 
             // txtSearch
             // 
@@ -380,12 +378,12 @@ namespace QTNPP_PEPSI
             this.btnLoc.TabIndex = 3;
             this.btnLoc.Text = "Lọc phiếu";
             this.btnLoc.TextColor = System.Drawing.Color.White;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // groupPanel1
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel1.Controls.Add(this.panelEx3);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Location = new System.Drawing.Point(397, 3);
@@ -394,12 +392,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel1.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel1.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel1.Style.BackColorGradientAngle = 90;
+            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderBottomWidth = 1;
-            this.groupPanel1.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel1.Style.BorderLeftWidth = 1;
             this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -409,7 +407,7 @@ namespace QTNPP_PEPSI
             this.groupPanel1.Style.CornerDiameter = 4;
             this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel1.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -464,6 +462,7 @@ namespace QTNPP_PEPSI
             this.buttonX4.TabIndex = 56;
             this.buttonX4.Text = "...";
             this.buttonX4.TextColor = System.Drawing.Color.White;
+            this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
             // 
             // cbbTenKhachHang
             // 
@@ -527,6 +526,7 @@ namespace QTNPP_PEPSI
             this.DTPNgayXuat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.DTPNgayXuat.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.DTPNgayXuat.ButtonDropDown.Visible = true;
+            this.DTPNgayXuat.Enabled = false;
             this.DTPNgayXuat.IsPopupCalendarOpen = false;
             this.DTPNgayXuat.Location = new System.Drawing.Point(150, 62);
             // 
@@ -648,7 +648,7 @@ namespace QTNPP_PEPSI
             this.txtTongTien.Location = new System.Drawing.Point(512, 62);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.PreventEnterBeep = true;
-            this.txtTongTien.Size = new System.Drawing.Size(206, 22);
+            this.txtTongTien.Size = new System.Drawing.Size(100, 22);
             this.txtTongTien.TabIndex = 38;
             this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -700,7 +700,6 @@ namespace QTNPP_PEPSI
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel3.Controls.Add(this.GvChiTietPhieuXuat);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Location = new System.Drawing.Point(397, 519);
@@ -709,12 +708,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel3.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel3.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel3.Style.BorderBottomWidth = 1;
-            this.groupPanel3.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel3.Style.BorderLeftWidth = 1;
             this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -724,7 +723,7 @@ namespace QTNPP_PEPSI
             this.groupPanel3.Style.CornerDiameter = 4;
             this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel3.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -773,12 +772,12 @@ namespace QTNPP_PEPSI
             this.GvChiTietPhieuXuat.RowTemplate.Height = 24;
             this.GvChiTietPhieuXuat.Size = new System.Drawing.Size(981, 190);
             this.GvChiTietPhieuXuat.TabIndex = 46;
+            this.GvChiTietPhieuXuat.Click += new System.EventHandler(this.GvChiTietPhieuXuat_Click);
             // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.ColorTable = DevComponents.DotNetBar.Controls.ePanelColorTable.Magenta;
             this.groupPanel2.Controls.Add(this.panelEx4);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Location = new System.Drawing.Point(397, 235);
@@ -787,12 +786,12 @@ namespace QTNPP_PEPSI
             // 
             // 
             // 
-            this.groupPanel2.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(145)))), ((int)(((byte)(180)))));
-            this.groupPanel2.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(104)))), ((int)(((byte)(150)))));
+            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.groupPanel2.Style.BackColorGradientAngle = 90;
+            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderBottomWidth = 1;
-            this.groupPanel2.Style.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(39)))), ((int)(((byte)(83)))));
+            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.groupPanel2.Style.BorderLeftWidth = 1;
             this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
@@ -802,7 +801,7 @@ namespace QTNPP_PEPSI
             this.groupPanel2.Style.CornerDiameter = 4;
             this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
             this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel2.Style.TextColor = System.Drawing.Color.White;
+            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
@@ -860,6 +859,7 @@ namespace QTNPP_PEPSI
             this.buttonX3.TabIndex = 47;
             this.buttonX3.Text = "...";
             this.buttonX3.TextColor = System.Drawing.Color.White;
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // labelX6
             // 
@@ -888,6 +888,7 @@ namespace QTNPP_PEPSI
             this.buttonX2.TabIndex = 46;
             this.buttonX2.Text = "...";
             this.buttonX2.TextColor = System.Drawing.Color.White;
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // labelX10
             // 
@@ -914,9 +915,10 @@ namespace QTNPP_PEPSI
             this.txtSoLuong.Location = new System.Drawing.Point(591, 64);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.PreventEnterBeep = true;
-            this.txtSoLuong.Size = new System.Drawing.Size(156, 22);
+            this.txtSoLuong.Size = new System.Drawing.Size(100, 22);
             this.txtSoLuong.TabIndex = 45;
             this.txtSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // cbbMaLoaiSP
             // 
@@ -929,6 +931,7 @@ namespace QTNPP_PEPSI
             this.cbbMaLoaiSP.Size = new System.Drawing.Size(196, 22);
             this.cbbMaLoaiSP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbMaLoaiSP.TabIndex = 39;
+            this.cbbMaLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cbbMaLoaiSP_SelectedIndexChanged);
             // 
             // lbsoluong
             // 
@@ -956,7 +959,7 @@ namespace QTNPP_PEPSI
             this.txtTonKho.Location = new System.Drawing.Point(591, 114);
             this.txtTonKho.Name = "txtTonKho";
             this.txtTonKho.PreventEnterBeep = true;
-            this.txtTonKho.Size = new System.Drawing.Size(156, 22);
+            this.txtTonKho.Size = new System.Drawing.Size(100, 22);
             this.txtTonKho.TabIndex = 44;
             this.txtTonKho.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -971,6 +974,7 @@ namespace QTNPP_PEPSI
             this.cbbMaSP.Size = new System.Drawing.Size(196, 22);
             this.cbbMaSP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbbMaSP.TabIndex = 40;
+            this.cbbMaSP.SelectedIndexChanged += new System.EventHandler(this.cbbMaSP_SelectedIndexChanged);
             // 
             // lb_mathuoc
             // 
@@ -1069,9 +1073,11 @@ namespace QTNPP_PEPSI
             this.txtGiaXuat.Location = new System.Drawing.Point(184, 109);
             this.txtGiaXuat.Name = "txtGiaXuat";
             this.txtGiaXuat.PreventEnterBeep = true;
-            this.txtGiaXuat.Size = new System.Drawing.Size(196, 22);
+            this.txtGiaXuat.Size = new System.Drawing.Size(100, 22);
             this.txtGiaXuat.TabIndex = 42;
             this.txtGiaXuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtGiaXuat.TextChanged += new System.EventHandler(this.txtGiaXuat_TextChanged);
+            this.txtGiaXuat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaXuat_KeyPress);
             // 
             // panelEx2
             // 
@@ -1082,7 +1088,7 @@ namespace QTNPP_PEPSI
             this.panelEx2.Controls.Add(this.btnThoat);
             this.panelEx2.Controls.Add(this.btnSua);
             this.panelEx2.Controls.Add(this.btnLapPX);
-            this.panelEx2.Controls.Add(this.btnXoa);
+            this.panelEx2.Controls.Add(this.btnXoaPX);
             this.panelEx2.Controls.Add(this.btnThem);
             this.panelEx2.Controls.Add(this.btnTaoMoi);
             this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
@@ -1110,6 +1116,7 @@ namespace QTNPP_PEPSI
             this.btnXoaCTPX.TabIndex = 13;
             this.btnXoaCTPX.Text = "Xóa CTPX";
             this.btnXoaCTPX.TextColor = System.Drawing.Color.White;
+            this.btnXoaCTPX.Click += new System.EventHandler(this.btnXoaCTPX_Click);
             // 
             // btnXuatPX
             // 
@@ -1123,6 +1130,7 @@ namespace QTNPP_PEPSI
             this.btnXuatPX.TabIndex = 12;
             this.btnXuatPX.Text = "Xuất PX";
             this.btnXuatPX.TextColor = System.Drawing.Color.White;
+            this.btnXuatPX.Click += new System.EventHandler(this.btnXuatPX_Click);
             // 
             // btnThoat
             // 
@@ -1136,6 +1144,7 @@ namespace QTNPP_PEPSI
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSua
             // 
@@ -1149,6 +1158,7 @@ namespace QTNPP_PEPSI
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.Color.White;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLapPX
             // 
@@ -1163,19 +1173,21 @@ namespace QTNPP_PEPSI
             this.btnLapPX.TabIndex = 9;
             this.btnLapPX.Text = "Lập PX";
             this.btnLapPX.TextColor = System.Drawing.Color.White;
+            this.btnLapPX.Click += new System.EventHandler(this.btnLapPX_Click);
             // 
-            // btnXoa
+            // btnXoaPX
             // 
-            this.btnXoa.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnXoa.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnXoa.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(210, 10);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 31);
-            this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXoa.TabIndex = 8;
-            this.btnXoa.Text = "Xóa PX";
-            this.btnXoa.TextColor = System.Drawing.Color.White;
+            this.btnXoaPX.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnXoaPX.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnXoaPX.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnXoaPX.Location = new System.Drawing.Point(210, 10);
+            this.btnXoaPX.Name = "btnXoaPX";
+            this.btnXoaPX.Size = new System.Drawing.Size(75, 31);
+            this.btnXoaPX.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnXoaPX.TabIndex = 8;
+            this.btnXoaPX.Text = "Xóa PX";
+            this.btnXoaPX.TextColor = System.Drawing.Color.White;
+            this.btnXoaPX.Click += new System.EventHandler(this.btnXoaPX_Click);
             // 
             // btnThem
             // 
@@ -1190,6 +1202,7 @@ namespace QTNPP_PEPSI
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnTaoMoi
             // 
@@ -1203,6 +1216,7 @@ namespace QTNPP_PEPSI
             this.btnTaoMoi.TabIndex = 6;
             this.btnTaoMoi.Text = "Tạo Mới";
             this.btnTaoMoi.TextColor = System.Drawing.Color.White;
+            this.btnTaoMoi.Click += new System.EventHandler(this.btnTaoMoi_Click);
             // 
             // FormXuatSanPham
             // 
@@ -1210,9 +1224,9 @@ namespace QTNPP_PEPSI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1410, 783);
             this.Controls.Add(this.groupPanel5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormXuatSanPham";
             this.Text = "FormXuatSanPham";
+            this.Load += new System.EventHandler(this.FormXuatSanPham_Load);
             this.groupPanel5.ResumeLayout(false);
             this.groupPanel6.ResumeLayout(false);
             this.panelEx5.ResumeLayout(false);
@@ -1287,7 +1301,7 @@ namespace QTNPP_PEPSI
         private DevComponents.DotNetBar.ButtonX btnThoat;
         private DevComponents.DotNetBar.ButtonX btnSua;
         private DevComponents.DotNetBar.ButtonX btnLapPX;
-        private DevComponents.DotNetBar.ButtonX btnXoa;
+        private DevComponents.DotNetBar.ButtonX btnXoaPX;
         private DevComponents.DotNetBar.ButtonX btnThem;
         private DevComponents.DotNetBar.ButtonX btnTaoMoi;
         private DevComponents.DotNetBar.ButtonX btnXoaCTPX;

@@ -37,80 +37,75 @@ namespace QTNPP_PEPSI
             this.ribbonTabItem4 = new DevComponents.DotNetBar.RibbonTabItem();
             this.explorerBar1 = new DevComponents.DotNetBar.ExplorerBar();
             this.explorerBarGroupItem1 = new DevComponents.DotNetBar.ExplorerBarGroupItem();
-            this.buttonItem19 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem45 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem21 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem35 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem49 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
             this.superTooltip1 = new DevComponents.DotNetBar.SuperTooltip();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar28 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem48 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar27 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem47 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar26 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem46 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar17 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem36 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar16 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem34 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar15 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem33 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar14 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem32 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar13 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem31 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar12 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem30 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar11 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem29 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar10 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar9 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar8 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar7 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem24 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel4 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar24 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem43 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar23 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem42 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar22 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem41 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar21 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem40 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar20 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem39 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel3 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar25 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem44 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar19 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem38 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar18 = new DevComponents.DotNetBar.RibbonBar();
-            this.buttonItem37 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem5 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem6 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem7 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem8 = new DevComponents.DotNetBar.RibbonTabItem();
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
+            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
+            this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonItem43 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem42 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem41 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem40 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem39 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem44 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem38 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem37 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem46 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem36 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem34 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem33 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem32 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem31 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem30 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem29 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem24 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem22 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem48 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem47 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem20 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
             this.applicationButton1 = new DevComponents.DotNetBar.ApplicationButton();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
@@ -130,10 +125,15 @@ namespace QTNPP_PEPSI
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
             this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
-            this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
-            this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonItem19 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem45 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem21 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem35 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem49 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.explorerBar1)).BeginInit();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -167,6 +167,9 @@ namespace QTNPP_PEPSI
             // explorerBar1
             // 
             this.explorerBar1.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
+            this.explorerBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.explorerBar1.BackColor = System.Drawing.SystemColors.Control;
             // 
             // 
@@ -180,9 +183,9 @@ namespace QTNPP_PEPSI
             this.explorerBar1.Groups.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.explorerBarGroupItem1});
             this.explorerBar1.Images = null;
-            this.explorerBar1.Location = new System.Drawing.Point(8, 155);
+            this.explorerBar1.Location = new System.Drawing.Point(8, 178);
             this.explorerBar1.Name = "explorerBar1";
-            this.explorerBar1.Size = new System.Drawing.Size(364, 740);
+            this.explorerBar1.Size = new System.Drawing.Size(364, 717);
             this.explorerBar1.StockStyle = DevComponents.DotNetBar.eExplorerBarStockStyle.SystemColors;
             this.explorerBar1.TabIndex = 8;
             this.explorerBar1.Text = "explorerBar1";
@@ -236,132 +239,6 @@ namespace QTNPP_PEPSI
             this.explorerBarGroupItem1.TitleStyle.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Rounded;
             this.explorerBarGroupItem1.TitleStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
             // 
-            // buttonItem19
-            // 
-            this.buttonItem19.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem19.HotFontUnderline = true;
-            this.buttonItem19.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem19.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem19.Image = global::QTNPP_PEPSI.Properties.Resources.warehouse;
-            this.buttonItem19.Name = "buttonItem19";
-            this.buttonItem19.Tag = "MHSP";
-            this.buttonItem19.Text = "<div><h4> Quản lý sản phẩm</h4></div>";
-            this.buttonItem19.Click += new System.EventHandler(this.buttonItem19_Click);
-            // 
-            // buttonItem2
-            // 
-            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem2.HotFontUnderline = true;
-            this.buttonItem2.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem2.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem2.Image = global::QTNPP_PEPSI.Properties.Resources.shopping_bag__1_;
-            this.buttonItem2.Name = "buttonItem2";
-            this.buttonItem2.Tag = "MHHDB";
-            this.buttonItem2.Text = "<div><h4> Bán sản phẩm</h4></div>";
-            this.buttonItem2.Click += new System.EventHandler(this.buttonItem2_Click);
-            // 
-            // buttonItem26
-            // 
-            this.buttonItem26.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem26.HotFontUnderline = true;
-            this.buttonItem26.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem26.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem26.Image = global::QTNPP_PEPSI.Properties.Resources.letter;
-            this.buttonItem26.Name = "buttonItem26";
-            this.buttonItem26.Tag = "MHPNSP";
-            this.buttonItem26.Text = "<div><h4> Phiếu nhập hàng</h4></div>";
-            this.buttonItem26.Click += new System.EventHandler(this.buttonItem26_Click);
-            // 
-            // buttonItem45
-            // 
-            this.buttonItem45.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem45.HotFontUnderline = true;
-            this.buttonItem45.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem45.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem45.Image = global::QTNPP_PEPSI.Properties.Resources.bill;
-            this.buttonItem45.Name = "buttonItem45";
-            this.buttonItem45.Tag = "MHPXSP";
-            this.buttonItem45.Text = "<div><h4> Phiếu xuất hàng</h4></div>";
-            this.buttonItem45.Click += new System.EventHandler(this.buttonItem45_Click);
-            // 
-            // buttonItem21
-            // 
-            this.buttonItem21.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem21.HotFontUnderline = true;
-            this.buttonItem21.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem21.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem21.Image = global::QTNPP_PEPSI.Properties.Resources.rating;
-            this.buttonItem21.Name = "buttonItem21";
-            this.buttonItem21.Tag = "MHNV";
-            this.buttonItem21.Text = "<div><h4> Quản lý nhân viên</h4></div>";
-            this.buttonItem21.Click += new System.EventHandler(this.buttonItem21_Click);
-            // 
-            // buttonItem23
-            // 
-            this.buttonItem23.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem23.HotFontUnderline = true;
-            this.buttonItem23.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem23.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem23.Image = global::QTNPP_PEPSI.Properties.Resources.customer_review;
-            this.buttonItem23.Name = "buttonItem23";
-            this.buttonItem23.Tag = "MHKH";
-            this.buttonItem23.Text = "<div><h4> Quản lý khách hàng</h4></div>";
-            this.buttonItem23.Click += new System.EventHandler(this.buttonItem23_Click);
-            // 
-            // buttonItem35
-            // 
-            this.buttonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem35.HotFontUnderline = true;
-            this.buttonItem35.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem35.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem35.Image = global::QTNPP_PEPSI.Properties.Resources.login__1_;
-            this.buttonItem35.Name = "buttonItem35";
-            this.buttonItem35.Tag = "MHPQ";
-            this.buttonItem35.Text = "<div><h4> Quản lý tài khoản</h4></div>";
-            this.buttonItem35.Click += new System.EventHandler(this.buttonItem35_Click);
-            // 
-            // buttonItem49
-            // 
-            this.buttonItem49.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem49.HotFontUnderline = true;
-            this.buttonItem49.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem49.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem49.Image = global::QTNPP_PEPSI.Properties.Resources.communicate;
-            this.buttonItem49.Name = "buttonItem49";
-            this.buttonItem49.Tag = "MHXL";
-            this.buttonItem49.Text = "<div><h4> Xếp lịch</h4></div>";
-            this.buttonItem49.Click += new System.EventHandler(this.buttonItem49_Click);
-            // 
-            // buttonItem18
-            // 
-            this.buttonItem18.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonItem18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
-            this.buttonItem18.HotFontUnderline = true;
-            this.buttonItem18.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.buttonItem18.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonItem18.Image = global::QTNPP_PEPSI.Properties.Resources.analytic;
-            this.buttonItem18.Name = "buttonItem18";
-            this.buttonItem18.Tag = "MHDDSP";
-            this.buttonItem18.Text = "<div><h4> Dự đoán sản phẩm</h4></div>";
-            this.buttonItem18.Click += new System.EventHandler(this.buttonItem18_Click);
-            // 
             // superTooltip1
             // 
             this.superTooltip1.DefaultTooltipSettings = new DevComponents.DotNetBar.SuperTooltipInfo("", "", "", null, null, DevComponents.DotNetBar.eTooltipColor.Gray);
@@ -374,8 +251,8 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
-            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel2);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel1);
             this.ribbonControl1.Controls.Add(this.ribbonPanel4);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -393,7 +270,7 @@ namespace QTNPP_PEPSI
             this.applicationButton1,
             this.buttonItem1,
             this.qatCustomizeItem1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1819, 154);
+            this.ribbonControl1.Size = new System.Drawing.Size(1819, 180);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonControl1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon";
             this.ribbonControl1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon";
@@ -416,6 +293,7 @@ namespace QTNPP_PEPSI
             // 
             // ribbonPanel1
             // 
+            this.ribbonPanel1.AutoSize = true;
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel1.Controls.Add(this.ribbonBar28);
             this.ribbonPanel1.Controls.Add(this.ribbonBar27);
@@ -424,10 +302,10 @@ namespace QTNPP_PEPSI
             this.ribbonPanel1.Controls.Add(this.ribbonBar2);
             this.ribbonPanel1.Controls.Add(this.ribbonBar1);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 57);
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 63);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(1819, 94);
+            this.ribbonPanel1.Size = new System.Drawing.Size(1819, 114);
             // 
             // 
             // 
@@ -441,6 +319,7 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
+            this.ribbonPanel1.Visible = false;
             // 
             // ribbonBar28
             // 
@@ -456,11 +335,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar28.ContainerControlProcessDialogKey = true;
             this.ribbonBar28.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar28.DragDropSupport = true;
+            this.ribbonBar28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar28.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem48});
-            this.ribbonBar28.Location = new System.Drawing.Point(458, 0);
+            this.ribbonBar28.Location = new System.Drawing.Point(553, 0);
             this.ribbonBar28.Name = "ribbonBar28";
-            this.ribbonBar28.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar28.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar28.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar28.TabIndex = 7;
             this.ribbonBar28.Text = "Phục hồi";
@@ -472,14 +352,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar28.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem48
-            // 
-            this.buttonItem48.Image = global::QTNPP_PEPSI.Properties.Resources.restore1;
-            this.buttonItem48.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem48.Name = "buttonItem48";
-            this.buttonItem48.SubItemsExpandWidth = 14;
-            this.buttonItem48.Click += new System.EventHandler(this.buttonItem48_Click);
             // 
             // ribbonBar27
             // 
@@ -495,11 +367,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar27.ContainerControlProcessDialogKey = true;
             this.ribbonBar27.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar27.DragDropSupport = true;
+            this.ribbonBar27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar27.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem47});
-            this.ribbonBar27.Location = new System.Drawing.Point(367, 0);
+            this.ribbonBar27.Location = new System.Drawing.Point(443, 0);
             this.ribbonBar27.Name = "ribbonBar27";
-            this.ribbonBar27.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar27.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar27.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar27.TabIndex = 6;
             this.ribbonBar27.Text = "Sao lưu";
@@ -511,14 +384,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar27.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem47
-            // 
-            this.buttonItem47.Image = global::QTNPP_PEPSI.Properties.Resources.backup11;
-            this.buttonItem47.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem47.Name = "buttonItem47";
-            this.buttonItem47.SubItemsExpandWidth = 14;
-            this.buttonItem47.Click += new System.EventHandler(this.buttonItem47_Click);
             // 
             // ribbonBar5
             // 
@@ -534,11 +399,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar5.ContainerControlProcessDialogKey = true;
             this.ribbonBar5.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar5.DragDropSupport = true;
+            this.ribbonBar5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar5.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem20});
-            this.ribbonBar5.Location = new System.Drawing.Point(276, 0);
+            this.ribbonBar5.Location = new System.Drawing.Point(333, 0);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar5.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar5.TabIndex = 5;
             this.ribbonBar5.Text = "Thoát";
@@ -550,14 +416,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar5.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem20
-            // 
-            this.buttonItem20.Image = global::QTNPP_PEPSI.Properties.Resources.exit__1_;
-            this.buttonItem20.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem20.Name = "buttonItem20";
-            this.buttonItem20.SubItemsExpandWidth = 14;
-            this.buttonItem20.Click += new System.EventHandler(this.buttonItem20_Click);
             // 
             // ribbonBar3
             // 
@@ -573,11 +431,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar3.ContainerControlProcessDialogKey = true;
             this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar3.DragDropSupport = true;
+            this.ribbonBar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar3.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem17});
-            this.ribbonBar3.Location = new System.Drawing.Point(185, 0);
+            this.ribbonBar3.Location = new System.Drawing.Point(223, 0);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar3.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 3;
             this.ribbonBar3.Text = "Đổi mật khẩu";
@@ -589,14 +448,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar3.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem17
-            // 
-            this.buttonItem17.Image = global::QTNPP_PEPSI.Properties.Resources.password__1_;
-            this.buttonItem17.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem17.Name = "buttonItem17";
-            this.buttonItem17.SubItemsExpandWidth = 14;
-            this.buttonItem17.Click += new System.EventHandler(this.buttonItem17_Click);
             // 
             // ribbonBar2
             // 
@@ -612,11 +463,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar2.ContainerControlProcessDialogKey = true;
             this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar2.DragDropSupport = true;
+            this.ribbonBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem16});
-            this.ribbonBar2.Location = new System.Drawing.Point(94, 0);
+            this.ribbonBar2.Location = new System.Drawing.Point(113, 0);
             this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar2.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar2.TabIndex = 2;
             this.ribbonBar2.Text = "Đăng xuất";
@@ -628,14 +480,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem16
-            // 
-            this.buttonItem16.Image = global::QTNPP_PEPSI.Properties.Resources.arrow;
-            this.buttonItem16.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem16.Name = "buttonItem16";
-            this.buttonItem16.SubItemsExpandWidth = 14;
-            this.buttonItem16.Click += new System.EventHandler(this.buttonItem16_Click);
             // 
             // ribbonBar1
             // 
@@ -653,12 +497,13 @@ namespace QTNPP_PEPSI
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
             this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar1.DragDropSupport = true;
+            this.ribbonBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem15});
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar1.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 1;
             this.ribbonBar1.Text = "Đăng nhập";
@@ -670,14 +515,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem15
-            // 
-            this.buttonItem15.Image = global::QTNPP_PEPSI.Properties.Resources.log_in__1_;
-            this.buttonItem15.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem15.Name = "buttonItem15";
-            this.buttonItem15.SubItemsExpandWidth = 14;
-            this.buttonItem15.Click += new System.EventHandler(this.buttonItem15_Click);
             // 
             // ribbonPanel2
             // 
@@ -696,10 +533,11 @@ namespace QTNPP_PEPSI
             this.ribbonPanel2.Controls.Add(this.ribbonBar7);
             this.ribbonPanel2.Controls.Add(this.ribbonBar6);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 57);
+            this.ribbonPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 63);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1819, 94);
+            this.ribbonPanel2.Size = new System.Drawing.Size(1819, 114);
             // 
             // 
             // 
@@ -713,7 +551,6 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 2;
-            this.ribbonPanel2.Visible = false;
             // 
             // ribbonBar26
             // 
@@ -729,15 +566,16 @@ namespace QTNPP_PEPSI
             this.ribbonBar26.ContainerControlProcessDialogKey = true;
             this.ribbonBar26.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar26.DragDropSupport = true;
+            this.ribbonBar26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar26.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem46});
-            this.ribbonBar26.Location = new System.Drawing.Point(1095, 0);
+            this.ribbonBar26.Location = new System.Drawing.Point(1311, 0);
             this.ribbonBar26.Name = "ribbonBar26";
-            this.ribbonBar26.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar26.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar26.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar26.TabIndex = 12;
             this.ribbonBar26.Tag = "MHTBTL";
-            this.ribbonBar26.Text = "CTTB-CTTL";
+            this.ribbonBar26.Text = "TB - TL";
             // 
             // 
             // 
@@ -746,14 +584,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar26.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem46
-            // 
-            this.buttonItem46.Image = global::QTNPP_PEPSI.Properties.Resources.tichdiem4;
-            this.buttonItem46.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem46.Name = "buttonItem46";
-            this.buttonItem46.SubItemsExpandWidth = 14;
-            this.buttonItem46.Click += new System.EventHandler(this.buttonItem46_Click);
             // 
             // ribbonBar17
             // 
@@ -771,9 +601,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar17.DragDropSupport = true;
             this.ribbonBar17.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem36});
-            this.ribbonBar17.Location = new System.Drawing.Point(1004, 0);
+            this.ribbonBar17.Location = new System.Drawing.Point(1201, 0);
             this.ribbonBar17.Name = "ribbonBar17";
-            this.ribbonBar17.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar17.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar17.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar17.TabIndex = 11;
             this.ribbonBar17.Tag = "MHKH";
@@ -786,14 +616,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar17.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem36
-            // 
-            this.buttonItem36.Image = global::QTNPP_PEPSI.Properties.Resources.customer_review;
-            this.buttonItem36.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem36.Name = "buttonItem36";
-            this.buttonItem36.SubItemsExpandWidth = 14;
-            this.buttonItem36.Click += new System.EventHandler(this.buttonItem36_Click);
             // 
             // ribbonBar16
             // 
@@ -809,15 +631,16 @@ namespace QTNPP_PEPSI
             this.ribbonBar16.ContainerControlProcessDialogKey = true;
             this.ribbonBar16.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar16.DragDropSupport = true;
+            this.ribbonBar16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar16.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem34});
-            this.ribbonBar16.Location = new System.Drawing.Point(913, 0);
+            this.ribbonBar16.Location = new System.Drawing.Point(1101, 0);
             this.ribbonBar16.Name = "ribbonBar16";
-            this.ribbonBar16.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar16.Size = new System.Drawing.Size(100, 111);
             this.ribbonBar16.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar16.TabIndex = 10;
             this.ribbonBar16.Tag = "MHHSX";
-            this.ribbonBar16.Text = "HSX";
+            this.ribbonBar16.Text = "Hãng SX";
             // 
             // 
             // 
@@ -826,14 +649,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar16.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem34
-            // 
-            this.buttonItem34.Image = global::QTNPP_PEPSI.Properties.Resources.barcode;
-            this.buttonItem34.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem34.Name = "buttonItem34";
-            this.buttonItem34.SubItemsExpandWidth = 14;
-            this.buttonItem34.Click += new System.EventHandler(this.buttonItem34_Click);
             // 
             // ribbonBar15
             // 
@@ -851,9 +666,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar15.DragDropSupport = true;
             this.ribbonBar15.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem33});
-            this.ribbonBar15.Location = new System.Drawing.Point(822, 0);
+            this.ribbonBar15.Location = new System.Drawing.Point(991, 0);
             this.ribbonBar15.Name = "ribbonBar15";
-            this.ribbonBar15.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar15.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar15.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar15.TabIndex = 9;
             this.ribbonBar15.Tag = "MHTT";
@@ -866,14 +681,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar15.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem33
-            // 
-            this.buttonItem33.Image = global::QTNPP_PEPSI.Properties.Resources.map;
-            this.buttonItem33.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem33.Name = "buttonItem33";
-            this.buttonItem33.SubItemsExpandWidth = 14;
-            this.buttonItem33.Click += new System.EventHandler(this.buttonItem33_Click);
             // 
             // ribbonBar14
             // 
@@ -891,9 +698,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar14.DragDropSupport = true;
             this.ribbonBar14.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem32});
-            this.ribbonBar14.Location = new System.Drawing.Point(731, 0);
+            this.ribbonBar14.Location = new System.Drawing.Point(881, 0);
             this.ribbonBar14.Name = "ribbonBar14";
-            this.ribbonBar14.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar14.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar14.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar14.TabIndex = 8;
             this.ribbonBar14.Tag = "MHXX";
@@ -906,14 +713,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar14.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem32
-            // 
-            this.buttonItem32.Image = global::QTNPP_PEPSI.Properties.Resources.original;
-            this.buttonItem32.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem32.Name = "buttonItem32";
-            this.buttonItem32.SubItemsExpandWidth = 14;
-            this.buttonItem32.Click += new System.EventHandler(this.buttonItem32_Click);
             // 
             // ribbonBar13
             // 
@@ -929,15 +728,16 @@ namespace QTNPP_PEPSI
             this.ribbonBar13.ContainerControlProcessDialogKey = true;
             this.ribbonBar13.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar13.DragDropSupport = true;
+            this.ribbonBar13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar13.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem31});
-            this.ribbonBar13.Location = new System.Drawing.Point(640, 0);
+            this.ribbonBar13.Location = new System.Drawing.Point(771, 0);
             this.ribbonBar13.Name = "ribbonBar13";
-            this.ribbonBar13.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar13.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar13.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar13.TabIndex = 7;
             this.ribbonBar13.Tag = "MHNCC";
-            this.ribbonBar13.Text = "Nhà CC";
+            this.ribbonBar13.Text = "Nhà cung cấp";
             // 
             // 
             // 
@@ -946,14 +746,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar13.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem31
-            // 
-            this.buttonItem31.Image = global::QTNPP_PEPSI.Properties.Resources.supplier__1_;
-            this.buttonItem31.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem31.Name = "buttonItem31";
-            this.buttonItem31.SubItemsExpandWidth = 14;
-            this.buttonItem31.Click += new System.EventHandler(this.buttonItem31_Click);
             // 
             // ribbonBar12
             // 
@@ -969,11 +761,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar12.ContainerControlProcessDialogKey = true;
             this.ribbonBar12.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar12.DragDropSupport = true;
+            this.ribbonBar12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar12.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem30});
-            this.ribbonBar12.Location = new System.Drawing.Point(549, 0);
+            this.ribbonBar12.Location = new System.Drawing.Point(661, 0);
             this.ribbonBar12.Name = "ribbonBar12";
-            this.ribbonBar12.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar12.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar12.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar12.TabIndex = 6;
             this.ribbonBar12.Tag = "MHLSP";
@@ -986,14 +779,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar12.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem30
-            // 
-            this.buttonItem30.Image = global::QTNPP_PEPSI.Properties.Resources.drink;
-            this.buttonItem30.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem30.Name = "buttonItem30";
-            this.buttonItem30.SubItemsExpandWidth = 14;
-            this.buttonItem30.Click += new System.EventHandler(this.buttonItem30_Click);
             // 
             // ribbonBar11
             // 
@@ -1011,13 +796,13 @@ namespace QTNPP_PEPSI
             this.ribbonBar11.DragDropSupport = true;
             this.ribbonBar11.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem29});
-            this.ribbonBar11.Location = new System.Drawing.Point(458, 0);
+            this.ribbonBar11.Location = new System.Drawing.Point(551, 0);
             this.ribbonBar11.Name = "ribbonBar11";
-            this.ribbonBar11.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar11.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar11.TabIndex = 5;
             this.ribbonBar11.Tag = "MHPAL";
-            this.ribbonBar11.Text = "PAL";
+            this.ribbonBar11.Text = "Pallet";
             // 
             // 
             // 
@@ -1026,14 +811,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar11.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem29
-            // 
-            this.buttonItem29.Image = global::QTNPP_PEPSI.Properties.Resources.shelf;
-            this.buttonItem29.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem29.Name = "buttonItem29";
-            this.buttonItem29.SubItemsExpandWidth = 14;
-            this.buttonItem29.Click += new System.EventHandler(this.buttonItem29_Click);
             // 
             // ribbonBar10
             // 
@@ -1051,9 +828,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar10.DragDropSupport = true;
             this.ribbonBar10.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem28});
-            this.ribbonBar10.Location = new System.Drawing.Point(367, 0);
+            this.ribbonBar10.Location = new System.Drawing.Point(441, 0);
             this.ribbonBar10.Name = "ribbonBar10";
-            this.ribbonBar10.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar10.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar10.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar10.TabIndex = 4;
             this.ribbonBar10.Tag = "MHSP";
@@ -1066,14 +843,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar10.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem28
-            // 
-            this.buttonItem28.Image = global::QTNPP_PEPSI.Properties.Resources.drink;
-            this.buttonItem28.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem28.Name = "buttonItem28";
-            this.buttonItem28.SubItemsExpandWidth = 14;
-            this.buttonItem28.Click += new System.EventHandler(this.buttonItem28_Click);
             // 
             // ribbonBar9
             // 
@@ -1089,11 +858,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar9.ContainerControlProcessDialogKey = true;
             this.ribbonBar9.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar9.DragDropSupport = true;
+            this.ribbonBar9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar9.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem27});
-            this.ribbonBar9.Location = new System.Drawing.Point(276, 0);
+            this.ribbonBar9.Location = new System.Drawing.Point(333, 0);
             this.ribbonBar9.Name = "ribbonBar9";
-            this.ribbonBar9.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar9.Size = new System.Drawing.Size(108, 111);
             this.ribbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar9.TabIndex = 3;
             this.ribbonBar9.Tag = "MHCC";
@@ -1106,14 +876,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar9.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem27
-            // 
-            this.buttonItem27.Image = global::QTNPP_PEPSI.Properties.Resources.schedule;
-            this.buttonItem27.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem27.Name = "buttonItem27";
-            this.buttonItem27.SubItemsExpandWidth = 14;
-            this.buttonItem27.Click += new System.EventHandler(this.buttonItem27_Click);
             // 
             // ribbonBar8
             // 
@@ -1131,9 +893,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar8.DragDropSupport = true;
             this.ribbonBar8.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem25});
-            this.ribbonBar8.Location = new System.Drawing.Point(185, 0);
+            this.ribbonBar8.Location = new System.Drawing.Point(223, 0);
             this.ribbonBar8.Name = "ribbonBar8";
-            this.ribbonBar8.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar8.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar8.TabIndex = 2;
             this.ribbonBar8.Tag = "MHBL";
@@ -1146,14 +908,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar8.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem25
-            // 
-            this.buttonItem25.Image = global::QTNPP_PEPSI.Properties.Resources.salary;
-            this.buttonItem25.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem25.Name = "buttonItem25";
-            this.buttonItem25.SubItemsExpandWidth = 14;
-            this.buttonItem25.Click += new System.EventHandler(this.buttonItem25_Click);
             // 
             // ribbonBar7
             // 
@@ -1171,9 +925,9 @@ namespace QTNPP_PEPSI
             this.ribbonBar7.DragDropSupport = true;
             this.ribbonBar7.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem24});
-            this.ribbonBar7.Location = new System.Drawing.Point(94, 0);
+            this.ribbonBar7.Location = new System.Drawing.Point(113, 0);
             this.ribbonBar7.Name = "ribbonBar7";
-            this.ribbonBar7.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar7.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar7.TabIndex = 1;
             this.ribbonBar7.Tag = "MHL";
@@ -1186,14 +940,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar7.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem24
-            // 
-            this.buttonItem24.Image = global::QTNPP_PEPSI.Properties.Resources.salary;
-            this.buttonItem24.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem24.Name = "buttonItem24";
-            this.buttonItem24.SubItemsExpandWidth = 14;
-            this.buttonItem24.Click += new System.EventHandler(this.buttonItem24_Click);
             // 
             // ribbonBar6
             // 
@@ -1213,7 +959,7 @@ namespace QTNPP_PEPSI
             this.buttonItem22});
             this.ribbonBar6.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar6.Name = "ribbonBar6";
-            this.ribbonBar6.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar6.Size = new System.Drawing.Size(110, 111);
             this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar6.TabIndex = 0;
             this.ribbonBar6.Tag = "MHNV";
@@ -1227,14 +973,6 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // buttonItem22
-            // 
-            this.buttonItem22.Image = global::QTNPP_PEPSI.Properties.Resources.nvbh;
-            this.buttonItem22.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem22.Name = "buttonItem22";
-            this.buttonItem22.SubItemsExpandWidth = 14;
-            this.buttonItem22.Click += new System.EventHandler(this.buttonItem22_Click);
-            // 
             // ribbonPanel4
             // 
             this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -1244,10 +982,10 @@ namespace QTNPP_PEPSI
             this.ribbonPanel4.Controls.Add(this.ribbonBar21);
             this.ribbonPanel4.Controls.Add(this.ribbonBar20);
             this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel4.Location = new System.Drawing.Point(0, 57);
+            this.ribbonPanel4.Location = new System.Drawing.Point(0, 63);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel4.Size = new System.Drawing.Size(1819, 94);
+            this.ribbonPanel4.Size = new System.Drawing.Size(1819, 114);
             // 
             // 
             // 
@@ -1277,11 +1015,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar24.ContainerControlProcessDialogKey = true;
             this.ribbonBar24.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar24.DragDropSupport = true;
+            this.ribbonBar24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar24.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem43});
-            this.ribbonBar24.Location = new System.Drawing.Point(351, 0);
+            this.ribbonBar24.Location = new System.Drawing.Point(555, 0);
             this.ribbonBar24.Name = "ribbonBar24";
-            this.ribbonBar24.Size = new System.Drawing.Size(87, 91);
+            this.ribbonBar24.Size = new System.Drawing.Size(138, 111);
             this.ribbonBar24.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar24.TabIndex = 4;
             this.ribbonBar24.Tag = "MHSPTK";
@@ -1294,14 +1033,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar24.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem43
-            // 
-            this.buttonItem43.Image = global::QTNPP_PEPSI.Properties.Resources.shelf;
-            this.buttonItem43.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem43.Name = "buttonItem43";
-            this.buttonItem43.SubItemsExpandWidth = 14;
-            this.buttonItem43.Click += new System.EventHandler(this.buttonItem43_Click);
             // 
             // ribbonBar23
             // 
@@ -1317,11 +1048,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar23.ContainerControlProcessDialogKey = true;
             this.ribbonBar23.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar23.DragDropSupport = true;
+            this.ribbonBar23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar23.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem42});
-            this.ribbonBar23.Location = new System.Drawing.Point(264, 0);
+            this.ribbonBar23.Location = new System.Drawing.Point(417, 0);
             this.ribbonBar23.Name = "ribbonBar23";
-            this.ribbonBar23.Size = new System.Drawing.Size(87, 91);
+            this.ribbonBar23.Size = new System.Drawing.Size(138, 111);
             this.ribbonBar23.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar23.TabIndex = 3;
             this.ribbonBar23.Tag = "MHSNV";
@@ -1334,14 +1066,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar23.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem42
-            // 
-            this.buttonItem42.Image = global::QTNPP_PEPSI.Properties.Resources.search1;
-            this.buttonItem42.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem42.Name = "buttonItem42";
-            this.buttonItem42.SubItemsExpandWidth = 14;
-            this.buttonItem42.Click += new System.EventHandler(this.buttonItem42_Click);
             // 
             // ribbonBar22
             // 
@@ -1357,11 +1081,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar22.ContainerControlProcessDialogKey = true;
             this.ribbonBar22.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar22.DragDropSupport = true;
+            this.ribbonBar22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar22.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem41});
-            this.ribbonBar22.Location = new System.Drawing.Point(177, 0);
+            this.ribbonBar22.Location = new System.Drawing.Point(279, 0);
             this.ribbonBar22.Name = "ribbonBar22";
-            this.ribbonBar22.Size = new System.Drawing.Size(87, 91);
+            this.ribbonBar22.Size = new System.Drawing.Size(138, 111);
             this.ribbonBar22.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar22.TabIndex = 2;
             this.ribbonBar22.Tag = "MHSSP";
@@ -1374,14 +1099,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar22.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem41
-            // 
-            this.buttonItem41.Image = global::QTNPP_PEPSI.Properties.Resources.inventory;
-            this.buttonItem41.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem41.Name = "buttonItem41";
-            this.buttonItem41.SubItemsExpandWidth = 14;
-            this.buttonItem41.Click += new System.EventHandler(this.buttonItem41_Click);
             // 
             // ribbonBar21
             // 
@@ -1397,11 +1114,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar21.ContainerControlProcessDialogKey = true;
             this.ribbonBar21.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar21.DragDropSupport = true;
+            this.ribbonBar21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar21.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem40});
-            this.ribbonBar21.Location = new System.Drawing.Point(90, 0);
+            this.ribbonBar21.Location = new System.Drawing.Point(141, 0);
             this.ribbonBar21.Name = "ribbonBar21";
-            this.ribbonBar21.Size = new System.Drawing.Size(87, 91);
+            this.ribbonBar21.Size = new System.Drawing.Size(138, 111);
             this.ribbonBar21.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar21.TabIndex = 1;
             this.ribbonBar21.Tag = "MHTKHD";
@@ -1414,14 +1132,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar21.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem40
-            // 
-            this.buttonItem40.Image = global::QTNPP_PEPSI.Properties.Resources.ThongKe;
-            this.buttonItem40.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem40.Name = "buttonItem40";
-            this.buttonItem40.SubItemsExpandWidth = 14;
-            this.buttonItem40.Click += new System.EventHandler(this.buttonItem40_Click);
             // 
             // ribbonBar20
             // 
@@ -1437,11 +1147,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar20.ContainerControlProcessDialogKey = true;
             this.ribbonBar20.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar20.DragDropSupport = true;
+            this.ribbonBar20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar20.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem39});
             this.ribbonBar20.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar20.Name = "ribbonBar20";
-            this.ribbonBar20.Size = new System.Drawing.Size(87, 91);
+            this.ribbonBar20.Size = new System.Drawing.Size(138, 111);
             this.ribbonBar20.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar20.TabIndex = 0;
             this.ribbonBar20.Tag = "MHTKSP";
@@ -1455,14 +1166,6 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonBar20.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // buttonItem39
-            // 
-            this.buttonItem39.Image = global::QTNPP_PEPSI.Properties.Resources.mail;
-            this.buttonItem39.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem39.Name = "buttonItem39";
-            this.buttonItem39.SubItemsExpandWidth = 14;
-            this.buttonItem39.Click += new System.EventHandler(this.buttonItem39_Click);
-            // 
             // ribbonPanel3
             // 
             this.ribbonPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -1470,10 +1173,10 @@ namespace QTNPP_PEPSI
             this.ribbonPanel3.Controls.Add(this.ribbonBar19);
             this.ribbonPanel3.Controls.Add(this.ribbonBar18);
             this.ribbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel3.Location = new System.Drawing.Point(0, 57);
+            this.ribbonPanel3.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel3.Size = new System.Drawing.Size(1819, 94);
+            this.ribbonPanel3.Size = new System.Drawing.Size(1819, 177);
             // 
             // 
             // 
@@ -1503,11 +1206,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar25.ContainerControlProcessDialogKey = true;
             this.ribbonBar25.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar25.DragDropSupport = true;
+            this.ribbonBar25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar25.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem44});
-            this.ribbonBar25.Location = new System.Drawing.Point(185, 0);
+            this.ribbonBar25.Location = new System.Drawing.Point(283, 0);
             this.ribbonBar25.Name = "ribbonBar25";
-            this.ribbonBar25.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar25.Size = new System.Drawing.Size(140, 174);
             this.ribbonBar25.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar25.TabIndex = 2;
             this.ribbonBar25.Tag = "MHPXSP";
@@ -1520,14 +1224,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar25.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem44
-            // 
-            this.buttonItem44.Image = global::QTNPP_PEPSI.Properties.Resources.bill;
-            this.buttonItem44.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem44.Name = "buttonItem44";
-            this.buttonItem44.SubItemsExpandWidth = 14;
-            this.buttonItem44.Click += new System.EventHandler(this.buttonItem44_Click);
             // 
             // ribbonBar19
             // 
@@ -1543,11 +1239,12 @@ namespace QTNPP_PEPSI
             this.ribbonBar19.ContainerControlProcessDialogKey = true;
             this.ribbonBar19.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar19.DragDropSupport = true;
+            this.ribbonBar19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar19.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem38});
-            this.ribbonBar19.Location = new System.Drawing.Point(94, 0);
+            this.ribbonBar19.Location = new System.Drawing.Point(143, 0);
             this.ribbonBar19.Name = "ribbonBar19";
-            this.ribbonBar19.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar19.Size = new System.Drawing.Size(140, 174);
             this.ribbonBar19.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar19.TabIndex = 1;
             this.ribbonBar19.Tag = "MHPNSP";
@@ -1560,14 +1257,6 @@ namespace QTNPP_PEPSI
             // 
             // 
             this.ribbonBar19.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // buttonItem38
-            // 
-            this.buttonItem38.Image = global::QTNPP_PEPSI.Properties.Resources.letter1;
-            this.buttonItem38.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem38.Name = "buttonItem38";
-            this.buttonItem38.SubItemsExpandWidth = 14;
-            this.buttonItem38.Click += new System.EventHandler(this.buttonItem38_Click);
             // 
             // ribbonBar18
             // 
@@ -1583,15 +1272,16 @@ namespace QTNPP_PEPSI
             this.ribbonBar18.ContainerControlProcessDialogKey = true;
             this.ribbonBar18.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar18.DragDropSupport = true;
+            this.ribbonBar18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbonBar18.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem37});
             this.ribbonBar18.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar18.Name = "ribbonBar18";
-            this.ribbonBar18.Size = new System.Drawing.Size(91, 91);
+            this.ribbonBar18.Size = new System.Drawing.Size(140, 174);
             this.ribbonBar18.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar18.TabIndex = 0;
             this.ribbonBar18.Tag = "MHHDB";
-            this.ribbonBar18.Text = "Bán sản phẩm";
+            this.ribbonBar18.Text = "Hóa đơn";
             // 
             // 
             // 
@@ -1601,47 +1291,281 @@ namespace QTNPP_PEPSI
             // 
             this.ribbonBar18.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // buttonItem37
-            // 
-            this.buttonItem37.Image = global::QTNPP_PEPSI.Properties.Resources.shopping_bag__1_;
-            this.buttonItem37.ImageFixedSize = new System.Drawing.Size(70, 40);
-            this.buttonItem37.Name = "buttonItem37";
-            this.buttonItem37.SubItemsExpandWidth = 14;
-            this.buttonItem37.Click += new System.EventHandler(this.buttonItem37_Click);
-            // 
             // ribbonTabItem5
             // 
-            this.ribbonTabItem5.Checked = true;
             this.ribbonTabItem5.Name = "ribbonTabItem5";
             this.ribbonTabItem5.Panel = this.ribbonPanel1;
-            this.ribbonTabItem5.Text = "<h6><font color=\"#ED1C24\"> Chương trình</font></h6>";
+            this.ribbonTabItem5.Text = "<h4><font color=\"#ED1C24\"> Chương trình</font></h4>";
             // 
             // ribbonTabItem6
             // 
+            this.ribbonTabItem6.Checked = true;
             this.ribbonTabItem6.Name = "ribbonTabItem6";
             this.ribbonTabItem6.Panel = this.ribbonPanel2;
-            this.ribbonTabItem6.Text = "<h6><font color=\"#ED1C24\"> Danh mục</font></h6>";
+            this.ribbonTabItem6.Text = "<h4><font color=\"#ED1C24\"> Danh mục</font></h4>";
             // 
             // ribbonTabItem7
             // 
             this.ribbonTabItem7.Name = "ribbonTabItem7";
             this.ribbonTabItem7.Panel = this.ribbonPanel3;
-            this.ribbonTabItem7.Text = "<h6><font color=\"#ED1C24\"> Nghiệp vụ</font></h6>";
+            this.ribbonTabItem7.Text = "<h4><font color=\"#ED1C24\"> Nghiệp vụ</font></h4>";
             // 
             // ribbonTabItem8
             // 
             this.ribbonTabItem8.Name = "ribbonTabItem8";
             this.ribbonTabItem8.Panel = this.ribbonPanel4;
-            this.ribbonTabItem8.Text = "<h6><font color=\"#ED1C24\"> Tìm kiếm</font></h6>";
+            this.ribbonTabItem8.Text = "<h4><font color=\"#ED1C24\"> Tìm kiếm</font></h4>";
             // 
             // labelItem1
             // 
-            this.labelItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelItem1.Height = 22;
+            this.labelItem1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelItem1.Height = 25;
             this.labelItem1.Name = "labelItem1";
-            this.labelItem1.PaddingLeft = 370;
+            this.labelItem1.PaddingLeft = 380;
             this.labelItem1.Text = "<b><font color=\"#ED1C24\">Xin chào, Nguyễn Văn A</font></b>";
-            this.labelItem1.Width = 600;
+            this.labelItem1.Width = 900;
+            // 
+            // buttonItem1
+            // 
+            this.buttonItem1.Name = "buttonItem1";
+            // 
+            // qatCustomizeItem1
+            // 
+            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            // 
+            // styleManager2
+            // 
+            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
+            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(372, 178);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1452, 717);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonItem43
+            // 
+            this.buttonItem43.Image = global::QTNPP_PEPSI.Properties.Resources.warehouse1;
+            this.buttonItem43.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem43.Name = "buttonItem43";
+            this.buttonItem43.SubItemsExpandWidth = 14;
+            this.buttonItem43.Click += new System.EventHandler(this.buttonItem43_Click);
+            // 
+            // buttonItem42
+            // 
+            this.buttonItem42.Image = global::QTNPP_PEPSI.Properties.Resources.search2;
+            this.buttonItem42.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem42.Name = "buttonItem42";
+            this.buttonItem42.SubItemsExpandWidth = 14;
+            this.buttonItem42.Click += new System.EventHandler(this.buttonItem42_Click);
+            // 
+            // buttonItem41
+            // 
+            this.buttonItem41.Image = global::QTNPP_PEPSI.Properties.Resources.searchsp;
+            this.buttonItem41.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem41.Name = "buttonItem41";
+            this.buttonItem41.SubItemsExpandWidth = 14;
+            this.buttonItem41.Click += new System.EventHandler(this.buttonItem41_Click);
+            // 
+            // buttonItem40
+            // 
+            this.buttonItem40.Image = global::QTNPP_PEPSI.Properties.Resources.thongkehd;
+            this.buttonItem40.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem40.Name = "buttonItem40";
+            this.buttonItem40.SubItemsExpandWidth = 14;
+            this.buttonItem40.Click += new System.EventHandler(this.buttonItem40_Click);
+            // 
+            // buttonItem39
+            // 
+            this.buttonItem39.Image = global::QTNPP_PEPSI.Properties.Resources.mail;
+            this.buttonItem39.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem39.Name = "buttonItem39";
+            this.buttonItem39.SubItemsExpandWidth = 14;
+            this.buttonItem39.Click += new System.EventHandler(this.buttonItem39_Click);
+            // 
+            // buttonItem44
+            // 
+            this.buttonItem44.Image = global::QTNPP_PEPSI.Properties.Resources.billxuat;
+            this.buttonItem44.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem44.Name = "buttonItem44";
+            this.buttonItem44.SubItemsExpandWidth = 14;
+            this.buttonItem44.Click += new System.EventHandler(this.buttonItem44_Click);
+            // 
+            // buttonItem38
+            // 
+            this.buttonItem38.Image = global::QTNPP_PEPSI.Properties.Resources.billnhap;
+            this.buttonItem38.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem38.Name = "buttonItem38";
+            this.buttonItem38.SubItemsExpandWidth = 14;
+            this.buttonItem38.Click += new System.EventHandler(this.buttonItem38_Click);
+            // 
+            // buttonItem37
+            // 
+            this.buttonItem37.Image = global::QTNPP_PEPSI.Properties.Resources.shopping_bag__1_;
+            this.buttonItem37.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem37.Name = "buttonItem37";
+            this.buttonItem37.SubItemsExpandWidth = 14;
+            this.buttonItem37.Click += new System.EventHandler(this.buttonItem37_Click);
+            // 
+            // buttonItem46
+            // 
+            this.buttonItem46.Image = global::QTNPP_PEPSI.Properties.Resources.piggy;
+            this.buttonItem46.ImageFixedSize = new System.Drawing.Size(65, 65);
+            this.buttonItem46.Name = "buttonItem46";
+            this.buttonItem46.SubItemsExpandWidth = 14;
+            this.buttonItem46.Click += new System.EventHandler(this.buttonItem46_Click);
+            // 
+            // buttonItem36
+            // 
+            this.buttonItem36.Image = global::QTNPP_PEPSI.Properties.Resources.customer;
+            this.buttonItem36.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem36.Name = "buttonItem36";
+            this.buttonItem36.SubItemsExpandWidth = 14;
+            this.buttonItem36.Click += new System.EventHandler(this.buttonItem36_Click);
+            // 
+            // buttonItem34
+            // 
+            this.buttonItem34.Image = global::QTNPP_PEPSI.Properties.Resources.hsx;
+            this.buttonItem34.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem34.Name = "buttonItem34";
+            this.buttonItem34.SubItemsExpandWidth = 14;
+            this.buttonItem34.Click += new System.EventHandler(this.buttonItem34_Click);
+            // 
+            // buttonItem33
+            // 
+            this.buttonItem33.Image = global::QTNPP_PEPSI.Properties.Resources.map;
+            this.buttonItem33.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem33.Name = "buttonItem33";
+            this.buttonItem33.SubItemsExpandWidth = 14;
+            this.buttonItem33.Click += new System.EventHandler(this.buttonItem33_Click);
+            // 
+            // buttonItem32
+            // 
+            this.buttonItem32.Image = global::QTNPP_PEPSI.Properties.Resources.original;
+            this.buttonItem32.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem32.Name = "buttonItem32";
+            this.buttonItem32.SubItemsExpandWidth = 14;
+            this.buttonItem32.Click += new System.EventHandler(this.buttonItem32_Click);
+            // 
+            // buttonItem31
+            // 
+            this.buttonItem31.Image = global::QTNPP_PEPSI.Properties.Resources.supplier1;
+            this.buttonItem31.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem31.Name = "buttonItem31";
+            this.buttonItem31.SubItemsExpandWidth = 14;
+            this.buttonItem31.Click += new System.EventHandler(this.buttonItem31_Click);
+            // 
+            // buttonItem30
+            // 
+            this.buttonItem30.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem30.Image = global::QTNPP_PEPSI.Properties.Resources.drink21;
+            this.buttonItem30.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem30.Name = "buttonItem30";
+            this.buttonItem30.SubItemsExpandWidth = 14;
+            this.buttonItem30.Click += new System.EventHandler(this.buttonItem30_Click);
+            // 
+            // buttonItem29
+            // 
+            this.buttonItem29.Image = global::QTNPP_PEPSI.Properties.Resources.pallet;
+            this.buttonItem29.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem29.Name = "buttonItem29";
+            this.buttonItem29.SubItemsExpandWidth = 14;
+            this.buttonItem29.Click += new System.EventHandler(this.buttonItem29_Click);
+            // 
+            // buttonItem28
+            // 
+            this.buttonItem28.Image = global::QTNPP_PEPSI.Properties.Resources.drink12;
+            this.buttonItem28.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem28.Name = "buttonItem28";
+            this.buttonItem28.SubItemsExpandWidth = 14;
+            this.buttonItem28.Click += new System.EventHandler(this.buttonItem28_Click);
+            // 
+            // buttonItem27
+            // 
+            this.buttonItem27.Image = global::QTNPP_PEPSI.Properties.Resources.schedule;
+            this.buttonItem27.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem27.Name = "buttonItem27";
+            this.buttonItem27.SubItemsExpandWidth = 14;
+            this.buttonItem27.Click += new System.EventHandler(this.buttonItem27_Click);
+            // 
+            // buttonItem25
+            // 
+            this.buttonItem25.Image = global::QTNPP_PEPSI.Properties.Resources.salary;
+            this.buttonItem25.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem25.Name = "buttonItem25";
+            this.buttonItem25.SubItemsExpandWidth = 14;
+            this.buttonItem25.Click += new System.EventHandler(this.buttonItem25_Click);
+            // 
+            // buttonItem24
+            // 
+            this.buttonItem24.Image = global::QTNPP_PEPSI.Properties.Resources.salary;
+            this.buttonItem24.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem24.Name = "buttonItem24";
+            this.buttonItem24.SubItemsExpandWidth = 14;
+            this.buttonItem24.Click += new System.EventHandler(this.buttonItem24_Click);
+            // 
+            // buttonItem22
+            // 
+            this.buttonItem22.Image = global::QTNPP_PEPSI.Properties.Resources.nvbh;
+            this.buttonItem22.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem22.Name = "buttonItem22";
+            this.buttonItem22.SubItemsExpandWidth = 14;
+            this.buttonItem22.Click += new System.EventHandler(this.buttonItem22_Click);
+            // 
+            // buttonItem48
+            // 
+            this.buttonItem48.Image = global::QTNPP_PEPSI.Properties.Resources.restore1;
+            this.buttonItem48.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem48.Name = "buttonItem48";
+            this.buttonItem48.SubItemsExpandWidth = 14;
+            this.buttonItem48.Click += new System.EventHandler(this.buttonItem48_Click);
+            // 
+            // buttonItem47
+            // 
+            this.buttonItem47.Image = global::QTNPP_PEPSI.Properties.Resources.backup3;
+            this.buttonItem47.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem47.Name = "buttonItem47";
+            this.buttonItem47.SubItemsExpandWidth = 14;
+            this.buttonItem47.Click += new System.EventHandler(this.buttonItem47_Click);
+            // 
+            // buttonItem20
+            // 
+            this.buttonItem20.Image = global::QTNPP_PEPSI.Properties.Resources.exit1;
+            this.buttonItem20.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem20.Name = "buttonItem20";
+            this.buttonItem20.SubItemsExpandWidth = 14;
+            this.buttonItem20.Click += new System.EventHandler(this.buttonItem20_Click);
+            // 
+            // buttonItem17
+            // 
+            this.buttonItem17.Image = global::QTNPP_PEPSI.Properties.Resources.password1;
+            this.buttonItem17.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem17.Name = "buttonItem17";
+            this.buttonItem17.SubItemsExpandWidth = 14;
+            this.buttonItem17.Click += new System.EventHandler(this.buttonItem17_Click);
+            // 
+            // buttonItem16
+            // 
+            this.buttonItem16.Image = global::QTNPP_PEPSI.Properties.Resources.arrow1;
+            this.buttonItem16.ImageFixedSize = new System.Drawing.Size(60, 60);
+            this.buttonItem16.Name = "buttonItem16";
+            this.buttonItem16.SubItemsExpandWidth = 14;
+            this.buttonItem16.Click += new System.EventHandler(this.buttonItem16_Click);
+            // 
+            // buttonItem15
+            // 
+            this.buttonItem15.Image = global::QTNPP_PEPSI.Properties.Resources.login1;
+            this.buttonItem15.ImageFixedSize = new System.Drawing.Size(70, 70);
+            this.buttonItem15.Name = "buttonItem15";
+            this.buttonItem15.SubItemsExpandWidth = 14;
+            this.buttonItem15.Click += new System.EventHandler(this.buttonItem15_Click);
             // 
             // applicationButton1
             // 
@@ -1874,27 +1798,131 @@ namespace QTNPP_PEPSI
             this.buttonItem14.SubItemsExpandWidth = 24;
             this.buttonItem14.Text = "E&xit";
             // 
-            // buttonItem1
+            // buttonItem19
             // 
-            this.buttonItem1.Name = "buttonItem1";
+            this.buttonItem19.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem19.HotFontUnderline = true;
+            this.buttonItem19.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem19.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem19.Image = global::QTNPP_PEPSI.Properties.Resources.warehouse;
+            this.buttonItem19.Name = "buttonItem19";
+            this.buttonItem19.Tag = "MHSP";
+            this.buttonItem19.Text = "<div><h4> Quản lý sản phẩm</h4></div>";
+            this.buttonItem19.Click += new System.EventHandler(this.buttonItem19_Click);
             // 
-            // qatCustomizeItem1
+            // buttonItem2
             // 
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            this.buttonItem2.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem2.HotFontUnderline = true;
+            this.buttonItem2.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem2.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem2.Image = global::QTNPP_PEPSI.Properties.Resources.shopping_bag__1_;
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.Tag = "MHHDB";
+            this.buttonItem2.Text = "<div><h4> Hóa đơn</h4></div>";
+            this.buttonItem2.Click += new System.EventHandler(this.buttonItem2_Click);
             // 
-            // styleManager2
+            // buttonItem26
             // 
-            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Blue;
-            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            this.buttonItem26.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem26.HotFontUnderline = true;
+            this.buttonItem26.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem26.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem26.Image = global::QTNPP_PEPSI.Properties.Resources.letter;
+            this.buttonItem26.Name = "buttonItem26";
+            this.buttonItem26.Tag = "MHPNSP";
+            this.buttonItem26.Text = "<div><h4> Phiếu nhập hàng</h4></div>";
+            this.buttonItem26.Click += new System.EventHandler(this.buttonItem26_Click);
             // 
-            // pictureBox1
+            // buttonItem45
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(372, 155);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1452, 740);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.buttonItem45.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem45.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem45.HotFontUnderline = true;
+            this.buttonItem45.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem45.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem45.Image = global::QTNPP_PEPSI.Properties.Resources.bill;
+            this.buttonItem45.Name = "buttonItem45";
+            this.buttonItem45.Tag = "MHPXSP";
+            this.buttonItem45.Text = "<div><h4> Phiếu xuất hàng</h4></div>";
+            this.buttonItem45.Click += new System.EventHandler(this.buttonItem45_Click);
+            // 
+            // buttonItem21
+            // 
+            this.buttonItem21.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem21.HotFontUnderline = true;
+            this.buttonItem21.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem21.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem21.Image = global::QTNPP_PEPSI.Properties.Resources.rating;
+            this.buttonItem21.Name = "buttonItem21";
+            this.buttonItem21.Tag = "MHNV";
+            this.buttonItem21.Text = "<div><h4> Quản lý nhân viên</h4></div>";
+            this.buttonItem21.Click += new System.EventHandler(this.buttonItem21_Click);
+            // 
+            // buttonItem23
+            // 
+            this.buttonItem23.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem23.HotFontUnderline = true;
+            this.buttonItem23.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem23.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem23.Image = global::QTNPP_PEPSI.Properties.Resources.customer_review;
+            this.buttonItem23.Name = "buttonItem23";
+            this.buttonItem23.Tag = "MHKH";
+            this.buttonItem23.Text = "<div><h4> Quản lý khách hàng</h4></div>";
+            this.buttonItem23.Click += new System.EventHandler(this.buttonItem23_Click);
+            // 
+            // buttonItem35
+            // 
+            this.buttonItem35.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem35.HotFontUnderline = true;
+            this.buttonItem35.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem35.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem35.Image = global::QTNPP_PEPSI.Properties.Resources.login__1_;
+            this.buttonItem35.Name = "buttonItem35";
+            this.buttonItem35.Tag = "MHPQ";
+            this.buttonItem35.Text = "<div><h4> Quản lý tài khoản</h4></div>";
+            this.buttonItem35.Click += new System.EventHandler(this.buttonItem35_Click);
+            // 
+            // buttonItem49
+            // 
+            this.buttonItem49.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem49.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem49.HotFontUnderline = true;
+            this.buttonItem49.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem49.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem49.Image = global::QTNPP_PEPSI.Properties.Resources.communicate;
+            this.buttonItem49.Name = "buttonItem49";
+            this.buttonItem49.Tag = "MHXL";
+            this.buttonItem49.Text = "<div><h4> Xếp lịch</h4></div>";
+            this.buttonItem49.Click += new System.EventHandler(this.buttonItem49_Click);
+            // 
+            // buttonItem18
+            // 
+            this.buttonItem18.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonItem18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(93)))), ((int)(((byte)(198)))));
+            this.buttonItem18.HotFontUnderline = true;
+            this.buttonItem18.HotForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.buttonItem18.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.buttonItem18.Image = global::QTNPP_PEPSI.Properties.Resources.analytic;
+            this.buttonItem18.Name = "buttonItem18";
+            this.buttonItem18.Tag = "MHDDSP";
+            this.buttonItem18.Text = "<div><h4> Dự đoán sản phẩm</h4></div>";
+            this.buttonItem18.Click += new System.EventHandler(this.buttonItem18_Click);
             // 
             // FormTrangChu
             // 

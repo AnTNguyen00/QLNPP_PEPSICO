@@ -25,29 +25,23 @@ namespace QTNPP_PEPSI
             GVLoaiKH.DataSource = loaikh.load_LoaiKH();
 
             //chỉ định dòng đầu vào textbox
-            txtMaLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[0].Value.ToString();
-            txtTenLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[1].Value.ToString();
+            txtMaLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[1].Value.ToString();
+            GVLoaiKH.Columns[1].HeaderText = "Mã loại khách hàng";
+            GVLoaiKH.Columns[1].Width = 130;
+
+            txtTenLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[2].Value.ToString();
+            GVLoaiKH.Columns[2].HeaderText = "Tên loại khách hàng";
+            GVLoaiKH.Columns[2].Width = 130;
 
             btnThem.Enabled = false;
             txtMaLoaiKH.Enabled = false;
         }
 
-        private void FormLoaiKhachHang_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                txtMaLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[0].Value.ToString();
-                txtTenLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[1].Value.ToString();
-            }
-            catch
-            { }
-        }
-
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public void layMaTuDong_LoaiKH()
         {
             List<LOAIKHACHHANG> lst = new List<LOAIKHACHHANG>();
             lst = loaikh.getLoaiKH();
-            string a = GVLoaiKH.Rows[GVLoaiKH.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVLoaiKH.Rows[GVLoaiKH.Rows.Count - 1].Cells[1].Value.ToString();
             string malkh = "";
             malkh = "LKH";
             int ma = lst.Count;
@@ -60,17 +54,15 @@ namespace QTNPP_PEPSI
             malkh += ma.ToString();
 
             txtMaLoaiKH.Text = malkh;
+        }
 
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_LoaiKH();
             btnThem.Enabled = true;
             txtTenLoaiKH.Enabled = true;
             txtTenLoaiKH.Clear();
             txtTenLoaiKH.Focus();
-        }
-
-        private void clear()
-        {
-            txtMaLoaiKH.Clear();
-            txtTenLoaiKH.Clear();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -97,7 +89,8 @@ namespace QTNPP_PEPSI
                 {
                     MessageBox.Show("Xóa dữ liệu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     GVLoaiKH.DataSource = loaikh.load_LoaiKH();
-                    clear();
+                    txtMaLoaiKH.Clear();
+                    txtTenLoaiKH.Clear();
                 }
                 else
                 {
@@ -137,8 +130,39 @@ namespace QTNPP_PEPSI
 
         private void GVLoaiKH_Click(object sender, EventArgs e)
         {
-            txtMaLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[0].Value.ToString();
-            txtTenLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[1].Value.ToString();
+            txtMaLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[1].Value.ToString();
+            txtTenLoaiKH.Text = GVLoaiKH.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (btnTimKiem.Text == "Clear")
+            {
+                txtMaLoaiKH.Clear();
+                txtTenLoaiKH.Clear();
+                txtTenLoaiKH.Enabled = true;
+                txtTenLoaiKH.Focus();
+                btnTimKiem.Text = "Search";
+            }
+            else
+            {
+                GVLoaiKH.DataSource = loaikh.search_TenLoaiKH(txtTenLoaiKH.Text);
+                btnTimKiem.Text = "Clear";
+            }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            FormLoaiKhachHang_Load(sender, e);
+        }
+
+        private void GVLoaiKH_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVLoaiKH.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVLoaiKH.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
         }
     }
 }

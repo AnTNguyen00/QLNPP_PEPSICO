@@ -35,6 +35,25 @@ namespace DAL_BLL
         }
         #endregion
 
+        #region Tìm kiếm CTTB - CTTL
+        public IQueryable search_TenCT(string ten)
+        {
+            return (from cttb_cttl in QLNPP_PS.CTTB_CTTLs.Where(p => p.TENCT.Contains(ten))
+                    select new
+                    {
+                        cttb_cttl.MACT,
+                        cttb_cttl.TENCT,
+                        cttb_cttl.SOSUAT,
+                        cttb_cttl.MASP,
+                        cttb_cttl.NGAYBD,
+                        cttb_cttl.NGAYKT,
+                        cttb_cttl.DIEMDAT,
+                        cttb_cttl.HINHANH
+                    });
+        }
+
+        #endregion
+
         #region Load dữ liệu CTTB - CTTL theo đăng ký CTTB - CTTL
         public IQueryable load_TenTBTL()
         {

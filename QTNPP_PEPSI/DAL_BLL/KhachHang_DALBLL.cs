@@ -34,12 +34,80 @@ namespace DAL_BLL
 
         #endregion
 
+        #region Tìm kiếm khách hàng
+        public IQueryable search_TenKH(string ten)
+        {
+            return (from k in QLNPP_PS.KHACHHANGs.Where(p => p.HOTENKH.Contains(ten))
+                    select new
+                    {
+                        k.MAKH,
+                        k.MAQUANHUYEN,
+                        k.HOTENKH,
+                        k.LOAIKHACHHANG,
+                        k.NGAYSINHKH,
+                        k.GIOITINHKH,
+                        k.DIACHIKH,
+                        k.SODIENTHOAIKH
+                    });
+        }
+
+        #endregion
+
         #region Load dữ liệu khách hàng theo đăng ký CTTB - CTTL
 
         public IQueryable load_TenKH()
         {
             var kh = from k in QLNPP_PS.KHACHHANGs select new { k.MAKH, k.MAQUANHUYEN, k.HOTENKH, k.LOAIKHACHHANG, k.NGAYSINHKH, k.GIOITINHKH, k.DIACHIKH, k.SODIENTHOAIKH };
             return kh;
+        }
+
+        #endregion
+
+        #region Load dữ liệu khách hàng theo hóa đơn bán
+        public IQueryable load_TenKH0()
+        {
+            var kh = from KhachHang in QLNPP_PS.KHACHHANGs select new { KhachHang.MAKH, KhachHang.HOTENKH };
+            return kh;
+        }
+
+        public IQueryable load_TenKH1(string maHDB)
+        {
+            var khach = from kh in QLNPP_PS.KHACHHANGs
+                        join hdb in QLNPP_PS.HOADONBANs
+                            on kh.MAKH equals hdb.MAKH
+                        where hdb.MAHDB == maHDB
+                        select new { kh.HOTENKH, kh.MAKH };
+            return khach;
+        }
+
+        public List<KHACHHANG> load_DiaChi(string maKH)
+        {
+            List<KHACHHANG> dc = new List<KHACHHANG>();
+            var diachi = (from dchi in QLNPP_PS.KHACHHANGs
+                          where dchi.MAKH == maKH
+                          select dchi).ToList();
+            dc.AddRange(diachi);
+            return dc;
+        }
+
+
+        #endregion
+
+        #region Load dữ liệu khách hàng theo hóa đơn xuất
+        public IQueryable load_TenKH2()
+        {
+            var kh = from KhachHang in QLNPP_PS.KHACHHANGs select new { KhachHang.MAKH, KhachHang.HOTENKH };
+            return kh;
+        }
+
+        public IQueryable load_TenKH3(string maPX)
+        {
+            var khach = from kh in QLNPP_PS.KHACHHANGs
+                        join px in QLNPP_PS.PHIEUXUATHANGs
+                            on kh.MAKH equals px.MAKH
+                        where px.MAPX == maPX
+                        select new { kh.HOTENKH, kh.MAKH };
+            return khach;
         }
 
         #endregion

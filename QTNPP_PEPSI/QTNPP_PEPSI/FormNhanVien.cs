@@ -20,16 +20,11 @@ namespace QTNPP_PEPSI
             InitializeComponent();
         }
 
-        private void btnTaoMoi_Click(object sender, EventArgs e)
+        public void layMaTuDong_NV()
         {
-            txtTenDN.Enabled = true;
-            txtSDT.Enabled = true;
-            txtHoTen.Enabled = true;
-            txtDiaChi.Enabled = true;
-            txtMatKhau.Enabled = true;
             List<NHANVIEN> lst = new List<NHANVIEN>();
             lst = nv.getNhanVien();
-            string a = GVNhanVien.Rows[GVNhanVien.Rows.Count - 1].Cells[0].Value.ToString();
+            string a = GVNhanVien.Rows[GVNhanVien.Rows.Count - 1].Cells[1].Value.ToString();
             string manv = "NV";
             string b = a.Substring(2, 2);
             int ma = Convert.ToInt32(b);
@@ -39,71 +34,119 @@ namespace QTNPP_PEPSI
             else
                 manv = manv + "";
             manv += ma;
-            //================================================//
 
             txtMaNV.Text = manv;
+        }
+
+        private void clear()
+        {
             txtTenDN.Clear();
+            txtTenDN.Focus();
             txtMatKhau.Clear();
             txtSDT.Clear();
             txtHoTen.Clear();
+            dTNgaySinh.ResetText();
             txtDiaChi.Clear();
             txtLuongCoBan.Clear();
             txtCMND.Clear();
+            dTNgayBDL.ResetText();
+            dTNgayKTL.ResetText();
+        }
+
+        private void btnTaoMoi_Click(object sender, EventArgs e)
+        {
+            layMaTuDong_NV();
+            clear();
+            txtTenDN.Focus();
             cbbTrinhDo.SelectedIndex = 0;
+
+            txtTenDN.Enabled = true;
+            txtSDT.Enabled = true;
+            txtHoTen.Enabled = true;
+            txtDiaChi.Enabled = true;
+            txtMatKhau.Enabled = true;
             btnThem.Enabled = true;   
         }
 
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
-            cbbTrinhDo.DisplayMember = "T";
-            cbbTrinhDo.ValueMember = "V";
-            cbbTrinhDo.Items.Add(new { T = "Trung cấp", V = "0" });
-            cbbTrinhDo.Items.Add(new { T = "Cao đẳng", V = "1" });
-            cbbTrinhDo.Items.Add(new { T = "Đại học", V = "2" });
-            cbbTrinhDo.Items.Add(new { T = "Thạc sĩ", V = "3" });
-            cbbTrinhDo.SelectedIndex = 0;
-
-            //================================================//
-
             if (FormDangNhap.nv.MANHOMNV == "NV")
             {
                 btnLuu.Enabled =btnSua.Enabled = btnTaoMoi.Enabled = btnThem.Enabled = btnXoa.Enabled = false;
             }
-            GVNhanVien.DataSource = nv.getNhanVien();
+            GVNhanVien.DataSource = nv.load_NV();
 
-            //================================================//
-
-            txtMaNV.Text = GVNhanVien.CurrentRow.Cells[0].Value.ToString();
-            txtTenDN.Text = GVNhanVien.CurrentRow.Cells[2].Value.ToString();
-            txtMatKhau.Text = GVNhanVien.CurrentRow.Cells[3].Value.ToString();
-            txtSDT.Text = GVNhanVien.CurrentRow.Cells[8].Value.ToString();
             cbbMaNhomNV.DataSource = nv.Load_NhomNV();
             cbbMaNhomNV.ValueMember = "MANHOMNV";
             cbbMaNhomNV.DisplayMember = "TENNHOM";
-            txtHoTen.Text = GVNhanVien.CurrentRow.Cells[4].Value.ToString();
 
-            cbbMaNhomNV.SelectedValue = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
-            dTNgaySinh.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[6].Value.ToString());
-            txtDiaChi.Text = GVNhanVien.CurrentRow.Cells[7].Value.ToString();
-            txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[13].Value.ToString();
-            txtCMND.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
-            dTNgayBDL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[10].Value.ToString());
-            dTNgayKTL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[11].Value.ToString()); 
+            //================================================//
+
+            txtMaNV.Text = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
+            GVNhanVien.Columns[1].HeaderText = "Mã nhân viên";
+            GVNhanVien.Columns[1].Width = 100;
+
+            cbbMaNhomNV.SelectedValue = GVNhanVien.CurrentRow.Cells[2].Value.ToString();
+            GVNhanVien.Columns[2].HeaderText = "Mã nhóm nhân viên";
+            GVNhanVien.Columns[2].Width = 130;
+            
+
+            txtTenDN.Text = GVNhanVien.CurrentRow.Cells[3].Value.ToString();
+            GVNhanVien.Columns[3].HeaderText = "Tên đăng nhập";
+            GVNhanVien.Columns[3].Width = 110;
+
+            txtMatKhau.Text = GVNhanVien.CurrentRow.Cells[4].Value.ToString();
+            GVNhanVien.Columns[4].HeaderText = "Mật khẩu";
+            GVNhanVien.Columns[4].Width = 80;
+
+            txtHoTen.Text = GVNhanVien.CurrentRow.Cells[5].Value.ToString();
+            GVNhanVien.Columns[5].HeaderText = "Họ tên nhân viên";
+            GVNhanVien.Columns[5].Width = 140;
+
+            GVNhanVien.Columns[6].HeaderText = "Giới tính";
+            GVNhanVien.Columns[6].Width = 70;
+
+            dTNgaySinh.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[7].Value.ToString());
+            GVNhanVien.Columns[7].HeaderText = "Ngày sinh";
+            GVNhanVien.Columns[7].Width = 90;
+
+            txtDiaChi.Text = GVNhanVien.CurrentRow.Cells[8].Value.ToString();
+            GVNhanVien.Columns[8].HeaderText = "Địa chỉ";
+            GVNhanVien.Columns[8].Width = 100;
+
+            txtSDT.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
+            GVNhanVien.Columns[9].HeaderText = "Số điện thoại";
+            GVNhanVien.Columns[9].Width = 100;
+
+            txtCMND.Text = GVNhanVien.CurrentRow.Cells[10].Value.ToString();
+            GVNhanVien.Columns[10].HeaderText = "CMND/CCCD";
+            GVNhanVien.Columns[10].Width = 100;
+
+            dTNgayBDL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[11].Value.ToString());
+            GVNhanVien.Columns[11].HeaderText = "Ngày bắt đầu làm";
+            GVNhanVien.Columns[11].Width = 140;
+
+            dTNgayKTL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[12].Value.ToString());
+            GVNhanVien.Columns[12].HeaderText = "Ngày kết thúc làm";
+            GVNhanVien.Columns[12].Width = 140;
+
+            GVNhanVien.Columns[13].HeaderText = "Trình độ";
+            GVNhanVien.Columns[13].Width = 80;
 
             //Load combobox trinh do học vấn
             for (int i = 0; i < cbbTrinhDo.Items.Count; i++)
             {
-                if (GVNhanVien.CurrentRow.Cells[12].Value.ToString() == "Trung cấp")
+                if (GVNhanVien.CurrentRow.Cells[13].Value.ToString() == "Trung cấp")
                 {
                     cbbTrinhDo.SelectedIndex = 0;
                     break;
                 }
-                else if (GVNhanVien.CurrentRow.Cells[12].Value.ToString() == "Cao đẳng")
+                else if (GVNhanVien.CurrentRow.Cells[13].Value.ToString() == "Cao đẳng")
                 {
                     cbbTrinhDo.SelectedIndex = 1;
                     break;
                 }
-                else if (GVNhanVien.CurrentRow.Cells[12].Value.ToString() == "Đại học")
+                else if (GVNhanVien.CurrentRow.Cells[13].Value.ToString() == "Đại học")
                 {
                     cbbTrinhDo.SelectedIndex = 2;
                     break;
@@ -114,6 +157,24 @@ namespace QTNPP_PEPSI
                     break;
                 }
             }
+
+
+            cbbTrinhDo.DisplayMember = "T";
+            cbbTrinhDo.ValueMember = "V";
+            cbbTrinhDo.Items.Add(new { T = "Trung cấp", V = "0" });
+            cbbTrinhDo.Items.Add(new { T = "Cao đẳng", V = "1" });
+            cbbTrinhDo.Items.Add(new { T = "Đại học", V = "2" });
+            cbbTrinhDo.Items.Add(new { T = "Thạc sĩ", V = "3" });
+            cbbTrinhDo.SelectedIndex = 0;
+
+
+            txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[14].Value.ToString();
+            GVNhanVien.Columns[14].HeaderText = "Lương cơ bản";
+            GVNhanVien.Columns[14].Width = 100;
+
+            //không cho nhập dữ liệu vào combobox
+            this.cbbMaNhomNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbTrinhDo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 
             txtLuongCoBan.Enabled = true;
             btnThem.Enabled = false;
@@ -161,21 +222,23 @@ namespace QTNPP_PEPSI
         {
             try 
             {
-                string nv = GVNhanVien.CurrentRow.Cells[0].Value.ToString();
+                string nv = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
 
-                txtMaNV.Text = GVNhanVien.CurrentRow.Cells[0].Value.ToString();
-                txtTenDN.Text = GVNhanVien.CurrentRow.Cells[2].Value.ToString();
-                txtMatKhau.Text = GVNhanVien.CurrentRow.Cells[3].Value.ToString();
-                txtSDT.Text = GVNhanVien.CurrentRow.Cells[8].Value.ToString();
-                txtHoTen.Text = GVNhanVien.CurrentRow.Cells[4].Value.ToString();
-                cbbMaNhomNV.SelectedValue = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
-                dTNgaySinh.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[6].Value.ToString());
-                txtDiaChi.Text = GVNhanVien.CurrentRow.Cells[7].Value.ToString();
-                txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[13].Value.ToString();
-                txtCMND.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
-                dTNgayBDL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[10].Value.ToString());
-                dTNgayKTL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[11].Value.ToString());
+                txtMaNV.Text = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
+                cbbMaNhomNV.SelectedValue = GVNhanVien.CurrentRow.Cells[2].Value.ToString();
+                txtTenDN.Text = GVNhanVien.CurrentRow.Cells[3].Value.ToString();
+                txtMatKhau.Text = GVNhanVien.CurrentRow.Cells[4].Value.ToString();   
+                txtHoTen.Text = GVNhanVien.CurrentRow.Cells[5].Value.ToString();
+                
+                dTNgaySinh.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[7].Value.ToString());
+                txtDiaChi.Text = GVNhanVien.CurrentRow.Cells[8].Value.ToString();
+                txtSDT.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
+                txtCMND.Text = GVNhanVien.CurrentRow.Cells[10].Value.ToString();
+                dTNgayBDL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[11].Value.ToString());
+                dTNgayKTL.Value = Convert.ToDateTime(GVNhanVien.CurrentRow.Cells[12].Value.ToString());
 
+                txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[14].Value.ToString();
+               
                 checkGioiTinh(nv);
             }
             catch
@@ -252,7 +315,7 @@ namespace QTNPP_PEPSI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string maNV = GVNhanVien.CurrentRow.Cells[0].Value.ToString();
+            string maNV = GVNhanVien.CurrentRow.Cells[1].Value.ToString();
             if (nv.delete_NhanVien(maNV) == true)
             {
                 MessageBox.Show("Xóa dữ liệu thành công", "Thông báo");
@@ -328,15 +391,15 @@ namespace QTNPP_PEPSI
             if (Convert.ToInt32(luongCoBan) < 2000000)
             {
                 MessageBox.Show("Lương cơ bản phải lớn hơn 2000000!", "Thông báo");
-                txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[13].Value.ToString();
+                txtLuongCoBan.Text = GVNhanVien.CurrentRow.Cells[14].Value.ToString();
                 return;
 
             }
             int checkcmnd = int.Parse(cmnd.Length.ToString());
-            if (checkcmnd > 10)
+            if (checkcmnd > 13)
             {
-                MessageBox.Show("Số CMND không được lớn hơn 10!", "Thông báo");
-                txtCMND.Text = GVNhanVien.CurrentRow.Cells[9].Value.ToString();
+                MessageBox.Show("Số CMND không được lớn hơn 12!", "Thông báo");
+                txtCMND.Text = GVNhanVien.CurrentRow.Cells[10].Value.ToString();
                 return;
             }
 
@@ -359,6 +422,64 @@ namespace QTNPP_PEPSI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtLuongCoBan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // Nếu bạn muốn, bạn có thể cho phép nhập số thực với dấu chấm
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHoTen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            FormTimKiemNhanVien formNew = new FormTimKiemNhanVien();
+            formNew.Show();
+        }
+
+        private void GVNhanVien_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.RowIndex == this.GVNhanVien.NewRowIndex)
+                return;
+
+            if (e.ColumnIndex == this.GVNhanVien.Columns["STT"].Index)
+                e.Value = e.RowIndex + 1;
+
+            if (e.ColumnIndex == this.GVNhanVien.Columns["MATKHAU"].Index && e.Value != null)
+            {
+                e.Value = new String('*', e.Value.ToString().Length);
+            }
         }
     }
 }

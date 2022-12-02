@@ -272,7 +272,7 @@ namespace QTNPP_PEPSI
 
         private void FormTrangChu_Load(object sender, EventArgs e)
         {
-            List<PHANQUYEN> lst_pq = phanquyen.load_QuyenChuaCo(FormDangNhap.nv.MANHOMNV);
+            List<PHANQUYEN> lst_pq = phanquyen.load_QuyenChuaCo1(FormDangNhap.nv.MANHOMNV);
             string maCheck = "";
             labelItem1.Text = "Xin Chào, " + FormDangNhap.nv.HOTENNV;
 
@@ -308,6 +308,8 @@ namespace QTNPP_PEPSI
                     item.Visible = false;
                 }
             }
+
+            
         }
 
         private void buttonItem44_Click(object sender, EventArgs e)
